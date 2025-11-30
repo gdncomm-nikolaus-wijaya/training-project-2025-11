@@ -10,6 +10,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class WebResponse<T> {
-    private Boolean success;
+    private boolean success;
     private T data;
 }

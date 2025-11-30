@@ -22,59 +22,59 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class GetDetailProductCommandImpl implements GetDetailProductCommand {
 
-    private final ProductRepository productRepository;
-    private final CategoryRepository categoryRepository;
+  private final ProductRepository productRepository;
+  private final CategoryRepository categoryRepository;
 
-    @Override
-    public GetDetailProductCommandResponse doCommand(GetDetailProductCommandRequest commandRequest) {
-        ProductDbModel product = productRepository.findBySku(commandRequest.getSku())
-                .orElseThrow(() -> new RuntimeException("Product not found with SKU: " + commandRequest.getSku()));
+  @Override
+  public GetDetailProductCommandResponse doCommand(GetDetailProductCommandRequest commandRequest) {
+    ProductDbModel product = productRepository.findBySku(commandRequest.getSku())
+        .orElseThrow(() -> new RuntimeException("Product not found with SKU: " + commandRequest.getSku()));
 
-        List<CategoryDbModel> categories = Collections.emptyList();
-        if (product.getCategoryIds() != null && !product.getCategoryIds().isEmpty()) {
-            categories = categoryRepository.findAllById(product.getCategoryIds());
-        }
-
-        return mapToResponse(product, categories);
+    List<CategoryDbModel> categories = Collections.emptyList();
+    if (product.getCategoryIds() != null && !product.getCategoryIds().isEmpty()) {
+      categories = categoryRepository.findAllById(product.getCategoryIds());
     }
 
-    private GetDetailProductCommandResponse mapToResponse(ProductDbModel product, List<CategoryDbModel> categories) {
-        return GetDetailProductCommandResponse.builder()
-                .sku(product.getSku())
-                .name(product.getName())
-                .description(product.getDescription())
-                .brand(product.getBrand())
-                .price(product.getPrice())
-                .comparePrice(product.getComparePrice())
-                .discountPercentage(product.getDiscountPercentage())
-                .images(mapImages(product.getImages()))
-                .specifications(product.getSpecifications())
-                .categories(mapCategories(categories))
-                .createdAt(product.getCreatedAt())
-                .updatedAt(product.getUpdatedAt())
-                .build();
-    }
+    return mapToResponse(product, categories);
+  }
 
-    private List<GetDetailProductCommandResponse.ProductImage> mapImages(List<ProductDbModel.ProductImage> images) {
-        if (images == null)
-            return null;
-        return images.stream()
-                .map(img -> GetDetailProductCommandResponse.ProductImage.builder()
-                        .url(img.getUrl())
-                        .alt(img.getAlt())
-                        .isPrimary(img.getIsPrimary())
-                        .build())
-                .collect(Collectors.toList());
-    }
+  private GetDetailProductCommandResponse mapToResponse(ProductDbModel product, List<CategoryDbModel> categories) {
+    return GetDetailProductCommandResponse.builder()
+        .sku(product.getSku())
+        .name(product.getName())
+        .description(product.getDescription())
+        .brand(product.getBrand())
+        .price(product.getPrice())
+        .comparePrice(product.getComparePrice())
+        .discountPercentage(product.getDiscountPercentage())
+        .images(mapImages(product.getImages()))
+        .specifications(product.getSpecifications())
+        .categories(mapCategories(categories))
+        .createdAt(product.getCreatedAt())
+        .updatedAt(product.getUpdatedAt())
+        .build();
+  }
 
-    private List<GetDetailProductCommandResponse.CategoryInfo> mapCategories(List<CategoryDbModel> categories) {
-        if (categories == null)
-            return null;
-        return categories.stream()
-                .map(cat -> GetDetailProductCommandResponse.CategoryInfo.builder()
-                        .id(cat.getId())
-                        .name(cat.getName())
-                        .build())
-                .collect(Collectors.toList());
-    }
+  private List<GetDetailProductCommandResponse.ProductImage> mapImages(List<ProductDbModel.ProductImage> images) {
+    if (images == null && images.size() == 0)
+      return null;
+    return images.stream()
+        .map(img -> GetDetailProductCommandResponse.ProductImage.builder()
+            .url(img.getUrl())
+            .alt(img.getAlt())
+            .isPrimary(img.getIsPrimary())
+            .build())
+        .collect(Collectors.toList());
+  }
+
+  private List<GetDetailProductCommandResponse.CategoryInfo> mapCategories(List<CategoryDbModel> categories) {
+    if (categories == null)
+      return null;
+    return categories.stream()
+        .map(cat -> GetDetailProductCommandResponse.CategoryInfo.builder()
+            .id(cat.getId())
+            .name(cat.getName())
+            .build())
+        .collect(Collectors.toList());
+  }
 }
