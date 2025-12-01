@@ -18,9 +18,9 @@ public class GetDetailProductCommandResponse {
     private String name;
     private String description;
     private String brand;
-    private Long price;
-    private Long comparePrice;
-    private Integer discountPercentage;
+    private long price;
+    private long comparePrice;
+    private int discountPercentage;
     private List<ProductImage> images;
     private Map<String, String> specifications;
     private List<CategoryInfo> categories;
