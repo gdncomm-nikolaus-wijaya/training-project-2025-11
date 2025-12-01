@@ -34,4 +34,5 @@ public class MemberModelDb {
     private String phoneNumber;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private LocalDateTime lastLoginAt;
 }

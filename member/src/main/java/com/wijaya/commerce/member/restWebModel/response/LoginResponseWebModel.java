@@ -21,7 +21,6 @@ public class LoginResponseWebModel {
     @NoArgsConstructor
     @Builder
     public static class UserInfo {
-        private String id;
         private String email;
         private String name;
     }

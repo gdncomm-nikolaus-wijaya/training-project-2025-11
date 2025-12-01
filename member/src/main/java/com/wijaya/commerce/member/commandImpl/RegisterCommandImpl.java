@@ -35,6 +35,7 @@ public class RegisterCommandImpl implements RegisterCommand {
                 .name(request.getName())
                 .phoneNumber(request.getPhoneNumber())
                 .password(passwordEncoded)
+                .status("ACTIVE")
                 .createdAt(LocalDateTime.now())
                 .updatedAt(LocalDateTime.now())
                 .build();
