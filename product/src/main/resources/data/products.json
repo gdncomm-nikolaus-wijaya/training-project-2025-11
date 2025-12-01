@@ -1,0 +1,2805 @@
+[
+  {
+    "name": "iPhone 15 Pro Max 128GB",
+    "description": "High-quality iPhone 15 Pro Max with 128GB storage",
+    "price": 15999000,
+    "comparePrice": 17572678,
+    "discountPercentage": 8,
+    "sku": "APP-0001",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-128gb.jpg",
+        "alt": "iPhone 15 Pro Max 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 128GB",
+      "brand": "Apple",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-17T10:30:00",
+    "updatedAt": "2024-02-10T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 256GB",
+    "description": "High-quality iPhone 15 Pro Max with 256GB storage",
+    "price": 15999000,
+    "comparePrice": 17694960,
+    "discountPercentage": 9,
+    "sku": "APP-0002",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-256gb.jpg",
+        "alt": "iPhone 15 Pro Max 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 256GB",
+      "brand": "Apple",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-19T10:30:00",
+    "updatedAt": "2024-01-22T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 512GB",
+    "description": "High-quality iPhone 15 Pro Max with 512GB storage",
+    "price": 18398850,
+    "comparePrice": 20106345,
+    "discountPercentage": 8,
+    "sku": "APP-0003",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-512gb.jpg",
+        "alt": "iPhone 15 Pro Max 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-21T10:30:00",
+    "updatedAt": "2024-01-29T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 1TB",
+    "description": "High-quality iPhone 15 Pro Max with 1TB storage",
+    "price": 20798700,
+    "comparePrice": 23069207,
+    "discountPercentage": 9,
+    "sku": "APP-0004",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-1tb.jpg",
+        "alt": "iPhone 15 Pro Max 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 1TB",
+      "brand": "Apple",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-01-23T10:30:00",
+    "updatedAt": "2024-02-16T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 256GB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 256GB storage",
+    "price": 17999000,
+    "comparePrice": 19752908,
+    "discountPercentage": 8,
+    "sku": "SAM-0005",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-256gb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-25T10:30:00",
+    "updatedAt": "2024-02-19T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 512GB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 512GB storage",
+    "price": 20698850,
+    "comparePrice": 23040436,
+    "discountPercentage": 10,
+    "sku": "SAM-0006",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-512gb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-27T10:30:00",
+    "updatedAt": "2024-02-13T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 1TB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 1TB storage",
+    "price": 23398700,
+    "comparePrice": 25558470,
+    "discountPercentage": 8,
+    "sku": "SAM-0007",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-1tb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 1TB",
+      "brand": "Samsung",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-01-29T10:30:00",
+    "updatedAt": "2024-02-18T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 128GB",
+    "description": "High-quality Google Pixel 8 Pro with 128GB storage",
+    "price": 13999000,
+    "comparePrice": 15538564,
+    "discountPercentage": 9,
+    "sku": "GOO-0008",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-128gb.jpg",
+        "alt": "Google Pixel 8 Pro 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 128GB",
+      "brand": "Google",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-01-31T10:30:00",
+    "updatedAt": "2024-02-15T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 256GB",
+    "description": "High-quality Google Pixel 8 Pro with 256GB storage",
+    "price": 13999000,
+    "comparePrice": 15698150,
+    "discountPercentage": 10,
+    "sku": "GOO-0009",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-256gb.jpg",
+        "alt": "Google Pixel 8 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 256GB",
+      "brand": "Google",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-02T10:30:00",
+    "updatedAt": "2024-02-06T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 512GB",
+    "description": "High-quality Google Pixel 8 Pro with 512GB storage",
+    "price": 16098849,
+    "comparePrice": 17441577,
+    "discountPercentage": 7,
+    "sku": "GOO-0010",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-512gb.jpg",
+        "alt": "Google Pixel 8 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 512GB",
+      "brand": "Google",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-04T10:30:00",
+    "updatedAt": "2024-02-08T10:30:00"
+  },
+  {
+    "name": "OnePlus 12 256GB",
+    "description": "High-quality OnePlus 12 with 256GB storage",
+    "price": 11999000,
+    "comparePrice": 13005638,
+    "discountPercentage": 7,
+    "sku": "ONE-0011",
+    "brand": "OnePlus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oneplus-12-256gb.jpg",
+        "alt": "OnePlus 12 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "OnePlus 12 256GB",
+      "brand": "OnePlus",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-06T10:30:00",
+    "updatedAt": "2024-02-20T10:30:00"
+  },
+  {
+    "name": "OnePlus 12 512GB",
+    "description": "High-quality OnePlus 12 with 512GB storage",
+    "price": 13798849,
+    "comparePrice": 15396168,
+    "discountPercentage": 10,
+    "sku": "ONE-0012",
+    "brand": "OnePlus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oneplus-12-512gb.jpg",
+        "alt": "OnePlus 12 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "OnePlus 12 512GB",
+      "brand": "OnePlus",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-08T10:30:00",
+    "updatedAt": "2024-02-27T10:30:00"
+  },
+  {
+    "name": "Xiaomi 14 Pro 256GB",
+    "description": "High-quality Xiaomi 14 Pro with 256GB storage",
+    "price": 10999000,
+    "comparePrice": 12615794,
+    "discountPercentage": 12,
+    "sku": "XIA-0013",
+    "brand": "Xiaomi",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xiaomi-14-pro-256gb.jpg",
+        "alt": "Xiaomi 14 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xiaomi 14 Pro 256GB",
+      "brand": "Xiaomi",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-10T10:30:00",
+    "updatedAt": "2024-03-03T10:30:00"
+  },
+  {
+    "name": "Xiaomi 14 Pro 512GB",
+    "description": "High-quality Xiaomi 14 Pro with 512GB storage",
+    "price": 12648849,
+    "comparePrice": 14074629,
+    "discountPercentage": 10,
+    "sku": "XIA-0014",
+    "brand": "Xiaomi",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xiaomi-14-pro-512gb.jpg",
+        "alt": "Xiaomi 14 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xiaomi 14 Pro 512GB",
+      "brand": "Xiaomi",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-12T10:30:00",
+    "updatedAt": "2024-02-28T10:30:00"
+  },
+  {
+    "name": "iPhone 14 128GB",
+    "description": "High-quality iPhone 14 with 128GB storage",
+    "price": 12999000,
+    "comparePrice": 14057909,
+    "discountPercentage": 7,
+    "sku": "APP-0015",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-128gb.jpg",
+        "alt": "iPhone 14 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 128GB",
+      "brand": "Apple",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-14T10:30:00",
+    "updatedAt": "2024-02-29T10:30:00"
+  },
+  {
+    "name": "iPhone 14 256GB",
+    "description": "High-quality iPhone 14 with 256GB storage",
+    "price": 12999000,
+    "comparePrice": 14329211,
+    "discountPercentage": 9,
+    "sku": "APP-0016",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-256gb.jpg",
+        "alt": "iPhone 14 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 256GB",
+      "brand": "Apple",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-16T10:30:00",
+    "updatedAt": "2024-03-12T10:30:00"
+  },
+  {
+    "name": "iPhone 14 512GB",
+    "description": "High-quality iPhone 14 with 512GB storage",
+    "price": 14948849,
+    "comparePrice": 15706420,
+    "discountPercentage": 4,
+    "sku": "APP-0017",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-512gb.jpg",
+        "alt": "iPhone 14 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-18T10:30:00",
+    "updatedAt": "2024-03-04T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold5 256GB",
+    "description": "High-quality Samsung Galaxy Z Fold5 with 256GB storage",
+    "price": 24999000,
+    "comparePrice": 26819693,
+    "discountPercentage": 6,
+    "sku": "SAM-0018",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-fold5-256gb.jpg",
+        "alt": "Samsung Galaxy Z Fold5 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Fold5 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-20T10:30:00",
+    "updatedAt": "2024-02-25T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold5 512GB",
+    "description": "High-quality Samsung Galaxy Z Fold5 with 512GB storage",
+    "price": 28748849,
+    "comparePrice": 30673254,
+    "discountPercentage": 6,
+    "sku": "SAM-0019",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-fold5-512gb.jpg",
+        "alt": "Samsung Galaxy Z Fold5 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Fold5 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-22T10:30:00",
+    "updatedAt": "2024-02-29T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip5 256GB",
+    "description": "High-quality Samsung Galaxy Z Flip5 with 256GB storage",
+    "price": 14999000,
+    "comparePrice": 16343743,
+    "discountPercentage": 8,
+    "sku": "SAM-0020",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-flip5-256gb.jpg",
+        "alt": "Samsung Galaxy Z Flip5 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Flip5 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-24T10:30:00",
+    "updatedAt": "2024-03-09T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip5 512GB",
+    "description": "High-quality Samsung Galaxy Z Flip5 with 512GB storage",
+    "price": 17248850,
+    "comparePrice": 18592092,
+    "discountPercentage": 7,
+    "sku": "SAM-0021",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-flip5-512gb.jpg",
+        "alt": "Samsung Galaxy Z Flip5 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Flip5 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-26T10:30:00",
+    "updatedAt": "2024-03-15T10:30:00"
+  },
+  {
+    "name": "Vivo X100 Pro 256GB",
+    "description": "High-quality Vivo X100 Pro with 256GB storage",
+    "price": 13999000,
+    "comparePrice": 15462831,
+    "discountPercentage": 9,
+    "sku": "VIV-0022",
+    "brand": "Vivo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/vivo-x100-pro-256gb.jpg",
+        "alt": "Vivo X100 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Vivo X100 Pro 256GB",
+      "brand": "Vivo",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-02-28T10:30:00",
+    "updatedAt": "2024-03-01T10:30:00"
+  },
+  {
+    "name": "Vivo X100 Pro 512GB",
+    "description": "High-quality Vivo X100 Pro with 512GB storage",
+    "price": 16098849,
+    "comparePrice": 17142922,
+    "discountPercentage": 6,
+    "sku": "VIV-0023",
+    "brand": "Vivo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/vivo-x100-pro-512gb.jpg",
+        "alt": "Vivo X100 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Vivo X100 Pro 512GB",
+      "brand": "Vivo",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-01T10:30:00",
+    "updatedAt": "2024-03-25T10:30:00"
+  },
+  {
+    "name": "Oppo Find X7 Ultra 256GB",
+    "description": "High-quality Oppo Find X7 Ultra with 256GB storage",
+    "price": 14999000,
+    "comparePrice": 17079771,
+    "discountPercentage": 12,
+    "sku": "OPP-0024",
+    "brand": "Oppo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oppo-find-x7-ultra-256gb.jpg",
+        "alt": "Oppo Find X7 Ultra 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Oppo Find X7 Ultra 256GB",
+      "brand": "Oppo",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-03T10:30:00",
+    "updatedAt": "2024-03-17T10:30:00"
+  },
+  {
+    "name": "Oppo Find X7 Ultra 512GB",
+    "description": "High-quality Oppo Find X7 Ultra with 512GB storage",
+    "price": 17248850,
+    "comparePrice": 19532663,
+    "discountPercentage": 11,
+    "sku": "OPP-0025",
+    "brand": "Oppo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oppo-find-x7-ultra-512gb.jpg",
+        "alt": "Oppo Find X7 Ultra 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Oppo Find X7 Ultra 512GB",
+      "brand": "Oppo",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-05T10:30:00",
+    "updatedAt": "2024-03-10T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 512GB",
+    "description": "High-quality MacBook Pro 14 with 512GB storage",
+    "price": 34498850,
+    "comparePrice": 37117618,
+    "discountPercentage": 7,
+    "sku": "APP-0026",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-512gb.jpg",
+        "alt": "MacBook Pro 14 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-07T10:30:00",
+    "updatedAt": "2024-03-17T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 1TB",
+    "description": "High-quality MacBook Pro 14 with 1TB storage",
+    "price": 38998700,
+    "comparePrice": 44390229,
+    "discountPercentage": 12,
+    "sku": "APP-0027",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-1tb.jpg",
+        "alt": "MacBook Pro 14 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 1TB",
+      "brand": "Apple",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-09T10:30:00",
+    "updatedAt": "2024-04-05T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 2TB",
+    "description": "High-quality MacBook Pro 14 with 2TB storage",
+    "price": 44998500,
+    "comparePrice": 49171587,
+    "discountPercentage": 8,
+    "sku": "APP-0028",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-2tb.jpg",
+        "alt": "MacBook Pro 14 2TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 2TB",
+      "brand": "Apple",
+      "variant": "2TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-11T10:30:00",
+    "updatedAt": "2024-04-05T10:30:00"
+  },
+  {
+    "name": "MacBook Air M2 256GB",
+    "description": "High-quality MacBook Air M2 with 256GB storage",
+    "price": 19999000,
+    "comparePrice": 21727164,
+    "discountPercentage": 7,
+    "sku": "APP-0029",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-air-m2-256gb.jpg",
+        "alt": "MacBook Air M2 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Air M2 256GB",
+      "brand": "Apple",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-13T10:30:00",
+    "updatedAt": "2024-03-20T10:30:00"
+  },
+  {
+    "name": "MacBook Air M2 512GB",
+    "description": "High-quality MacBook Air M2 with 512GB storage",
+    "price": 22998850,
+    "comparePrice": 24692640,
+    "discountPercentage": 6,
+    "sku": "APP-0030",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-air-m2-512gb.jpg",
+        "alt": "MacBook Air M2 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Air M2 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-15T10:30:00",
+    "updatedAt": "2024-04-12T10:30:00"
+  },
+  {
+    "name": "Dell XPS 13 512GB",
+    "description": "High-quality Dell XPS 13 with 512GB storage",
+    "price": 28748849,
+    "comparePrice": 31740876,
+    "discountPercentage": 9,
+    "sku": "DEL-0031",
+    "brand": "Dell",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/dell-xps-13-512gb.jpg",
+        "alt": "Dell XPS 13 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Dell XPS 13 512GB",
+      "brand": "Dell",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-17T10:30:00",
+    "updatedAt": "2024-04-01T10:30:00"
+  },
+  {
+    "name": "Dell XPS 13 1TB",
+    "description": "High-quality Dell XPS 13 with 1TB storage",
+    "price": 32498700,
+    "comparePrice": 37104979,
+    "discountPercentage": 12,
+    "sku": "DEL-0032",
+    "brand": "Dell",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/dell-xps-13-1tb.jpg",
+        "alt": "Dell XPS 13 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Dell XPS 13 1TB",
+      "brand": "Dell",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-19T10:30:00",
+    "updatedAt": "2024-03-31T10:30:00"
+  },
+  {
+    "name": "HP Spectre x360 512GB",
+    "description": "High-quality HP Spectre x360 with 512GB storage",
+    "price": 26448849,
+    "comparePrice": 29337680,
+    "discountPercentage": 9,
+    "sku": "HP-0033",
+    "brand": "HP",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/hp-spectre-x360-512gb.jpg",
+        "alt": "HP Spectre x360 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "HP Spectre x360 512GB",
+      "brand": "HP",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-21T10:30:00",
+    "updatedAt": "2024-04-03T10:30:00"
+  },
+  {
+    "name": "HP Spectre x360 1TB",
+    "description": "High-quality HP Spectre x360 with 1TB storage",
+    "price": 29898700,
+    "comparePrice": 31842311,
+    "discountPercentage": 6,
+    "sku": "HP-0034",
+    "brand": "HP",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/hp-spectre-x360-1tb.jpg",
+        "alt": "HP Spectre x360 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "HP Spectre x360 1TB",
+      "brand": "HP",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-23T10:30:00",
+    "updatedAt": "2024-04-19T10:30:00"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon 512GB",
+    "description": "High-quality Lenovo ThinkPad X1 Carbon with 512GB storage",
+    "price": 32198849,
+    "comparePrice": 35745998,
+    "discountPercentage": 9,
+    "sku": "LEN-0035",
+    "brand": "Lenovo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/lenovo-thinkpad-x1-carbon-512gb.jpg",
+        "alt": "Lenovo ThinkPad X1 Carbon 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Lenovo ThinkPad X1 Carbon 512GB",
+      "brand": "Lenovo",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-25T10:30:00",
+    "updatedAt": "2024-04-02T10:30:00"
+  },
+  {
+    "name": "Lenovo ThinkPad X1 Carbon 1TB",
+    "description": "High-quality Lenovo ThinkPad X1 Carbon with 1TB storage",
+    "price": 36398700,
+    "comparePrice": 41626574,
+    "discountPercentage": 12,
+    "sku": "LEN-0036",
+    "brand": "Lenovo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/lenovo-thinkpad-x1-carbon-1tb.jpg",
+        "alt": "Lenovo ThinkPad X1 Carbon 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Lenovo ThinkPad X1 Carbon 1TB",
+      "brand": "Lenovo",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-27T10:30:00",
+    "updatedAt": "2024-04-10T10:30:00"
+  },
+  {
+    "name": "Asus Zenbook 512GB",
+    "description": "High-quality Asus Zenbook with 512GB storage",
+    "price": 18398850,
+    "comparePrice": 21017410,
+    "discountPercentage": 12,
+    "sku": "ASU-0037",
+    "brand": "Asus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/asus-zenbook-512gb.jpg",
+        "alt": "Asus Zenbook 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Asus Zenbook 512GB",
+      "brand": "Asus",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-03-29T10:30:00",
+    "updatedAt": "2024-04-18T10:30:00"
+  },
+  {
+    "name": "Asus Zenbook 1TB",
+    "description": "High-quality Asus Zenbook with 1TB storage",
+    "price": 20798700,
+    "comparePrice": 22536519,
+    "discountPercentage": 7,
+    "sku": "ASU-0038",
+    "brand": "Asus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/asus-zenbook-1tb.jpg",
+        "alt": "Asus Zenbook 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Asus Zenbook 1TB",
+      "brand": "Asus",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-03-31T10:30:00",
+    "updatedAt": "2024-04-03T10:30:00"
+  },
+  {
+    "name": "Microsoft Surface Laptop 256GB",
+    "description": "High-quality Microsoft Surface Laptop with 256GB storage",
+    "price": 18999000,
+    "comparePrice": 21182150,
+    "discountPercentage": 10,
+    "sku": "MIC-0039",
+    "brand": "Microsoft",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/microsoft-surface-laptop-256gb.jpg",
+        "alt": "Microsoft Surface Laptop 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Microsoft Surface Laptop 256GB",
+      "brand": "Microsoft",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-02T10:30:00",
+    "updatedAt": "2024-04-14T10:30:00"
+  },
+  {
+    "name": "Microsoft Surface Laptop 512GB",
+    "description": "High-quality Microsoft Surface Laptop with 512GB storage",
+    "price": 21848850,
+    "comparePrice": 24600415,
+    "discountPercentage": 11,
+    "sku": "MIC-0040",
+    "brand": "Microsoft",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/microsoft-surface-laptop-512gb.jpg",
+        "alt": "Microsoft Surface Laptop 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Microsoft Surface Laptop 512GB",
+      "brand": "Microsoft",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-04T10:30:00",
+    "updatedAt": "2024-04-13T10:30:00"
+  },
+  {
+    "name": "Razer Blade 15 512GB",
+    "description": "High-quality Razer Blade 15 with 512GB storage",
+    "price": 37948850,
+    "comparePrice": 42198245,
+    "discountPercentage": 10,
+    "sku": "RAZ-0041",
+    "brand": "Razer",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/razer-blade-15-512gb.jpg",
+        "alt": "Razer Blade 15 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Razer Blade 15 512GB",
+      "brand": "Razer",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-06T10:30:00",
+    "updatedAt": "2024-04-13T10:30:00"
+  },
+  {
+    "name": "Razer Blade 15 1TB",
+    "description": "High-quality Razer Blade 15 with 1TB storage",
+    "price": 42898700,
+    "comparePrice": 47931213,
+    "discountPercentage": 10,
+    "sku": "RAZ-0042",
+    "brand": "Razer",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/razer-blade-15-1tb.jpg",
+        "alt": "Razer Blade 15 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Razer Blade 15 1TB",
+      "brand": "Razer",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-04-08T10:30:00",
+    "updatedAt": "2024-05-04T10:30:00"
+  },
+  {
+    "name": "Razer Blade 15 2TB",
+    "description": "High-quality Razer Blade 15 with 2TB storage",
+    "price": 49498500,
+    "comparePrice": 55552291,
+    "discountPercentage": 10,
+    "sku": "RAZ-0043",
+    "brand": "Razer",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/razer-blade-15-2tb.jpg",
+        "alt": "Razer Blade 15 2TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Razer Blade 15 2TB",
+      "brand": "Razer",
+      "variant": "2TB"
+    },
+    "active": true,
+    "createdAt": "2024-04-10T10:30:00",
+    "updatedAt": "2024-05-04T10:30:00"
+  },
+  {
+    "name": "Acer Swift 3 256GB",
+    "description": "High-quality Acer Swift 3 with 256GB storage",
+    "price": 12999000,
+    "comparePrice": 14124280,
+    "discountPercentage": 7,
+    "sku": "ACE-0044",
+    "brand": "Acer",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/acer-swift-3-256gb.jpg",
+        "alt": "Acer Swift 3 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Acer Swift 3 256GB",
+      "brand": "Acer",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-12T10:30:00",
+    "updatedAt": "2024-05-07T10:30:00"
+  },
+  {
+    "name": "Acer Swift 3 512GB",
+    "description": "High-quality Acer Swift 3 with 512GB storage",
+    "price": 14948849,
+    "comparePrice": 16535936,
+    "discountPercentage": 9,
+    "sku": "ACE-0045",
+    "brand": "Acer",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/acer-swift-3-512gb.jpg",
+        "alt": "Acer Swift 3 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Acer Swift 3 512GB",
+      "brand": "Acer",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-14T10:30:00",
+    "updatedAt": "2024-05-06T10:30:00"
+  },
+  {
+    "name": "LG Gram 512GB",
+    "description": "High-quality LG Gram with 512GB storage",
+    "price": 27598849,
+    "comparePrice": 29101485,
+    "discountPercentage": 5,
+    "sku": "LG-0046",
+    "brand": "LG",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/lg-gram-512gb.jpg",
+        "alt": "LG Gram 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "LG Gram 512GB",
+      "brand": "LG",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-04-16T10:30:00",
+    "updatedAt": "2024-04-20T10:30:00"
+  },
+  {
+    "name": "LG Gram 1TB",
+    "description": "High-quality LG Gram with 1TB storage",
+    "price": 31198700,
+    "comparePrice": 33318256,
+    "discountPercentage": 6,
+    "sku": "LG-0047",
+    "brand": "LG",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/lg-gram-1tb.jpg",
+        "alt": "LG Gram 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "LG Gram 1TB",
+      "brand": "LG",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-04-18T10:30:00",
+    "updatedAt": "2024-05-15T10:30:00"
+  },
+  {
+    "name": "Sony WH-1000XM5 Standard",
+    "description": "High-quality Sony WH-1000XM5",
+    "price": 3999000,
+    "comparePrice": 4266078,
+    "discountPercentage": 6,
+    "sku": "SON-0048",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/sony-wh-1000xm5-standard.jpg",
+        "alt": "Sony WH-1000XM5 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Sony WH-1000XM5 Standard",
+      "brand": "Sony",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-20T10:30:00",
+    "updatedAt": "2024-05-11T10:30:00"
+  },
+  {
+    "name": "AirPods Pro 2 Standard",
+    "description": "High-quality AirPods Pro 2",
+    "price": 3499000,
+    "comparePrice": 3836822,
+    "discountPercentage": 8,
+    "sku": "APP-0049",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/airpods-pro-2-standard.jpg",
+        "alt": "AirPods Pro 2 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "AirPods Pro 2 Standard",
+      "brand": "Apple",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-22T10:30:00",
+    "updatedAt": "2024-05-18T10:30:00"
+  },
+  {
+    "name": "Bose QuietComfort Ultra Standard",
+    "description": "High-quality Bose QuietComfort Ultra",
+    "price": 5299000,
+    "comparePrice": 5777604,
+    "discountPercentage": 8,
+    "sku": "BOS-0050",
+    "brand": "Bose",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/bose-quietcomfort-ultra-standard.jpg",
+        "alt": "Bose QuietComfort Ultra Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Bose QuietComfort Ultra Standard",
+      "brand": "Bose",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-24T10:30:00",
+    "updatedAt": "2024-05-03T10:30:00"
+  },
+  {
+    "name": "Sennheiser HD 660S2 Standard",
+    "description": "High-quality Sennheiser HD 660S2",
+    "price": 5999000,
+    "comparePrice": 6597590,
+    "discountPercentage": 9,
+    "sku": "SEN-0051",
+    "brand": "Sennheiser",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/sennheiser-hd-660s2-standard.jpg",
+        "alt": "Sennheiser HD 660S2 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Sennheiser HD 660S2 Standard",
+      "brand": "Sennheiser",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-26T10:30:00",
+    "updatedAt": "2024-05-19T10:30:00"
+  },
+  {
+    "name": "JBL Flip 6 Standard",
+    "description": "High-quality JBL Flip 6",
+    "price": 1999000,
+    "comparePrice": 2101163,
+    "discountPercentage": 4,
+    "sku": "JBL-0052",
+    "brand": "JBL",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/jbl-flip-6-standard.jpg",
+        "alt": "JBL Flip 6 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "JBL Flip 6 Standard",
+      "brand": "JBL",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-28T10:30:00",
+    "updatedAt": "2024-05-10T10:30:00"
+  },
+  {
+    "name": "Marshall Stanmore III Standard",
+    "description": "High-quality Marshall Stanmore III",
+    "price": 4499000,
+    "comparePrice": 4935465,
+    "discountPercentage": 8,
+    "sku": "MAR-0053",
+    "brand": "Marshall",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/marshall-stanmore-iii-standard.jpg",
+        "alt": "Marshall Stanmore III Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Marshall Stanmore III Standard",
+      "brand": "Marshall",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-04-30T10:30:00",
+    "updatedAt": "2024-05-11T10:30:00"
+  },
+  {
+    "name": "Beats Studio Pro Standard",
+    "description": "High-quality Beats Studio Pro",
+    "price": 3999000,
+    "comparePrice": 4536851,
+    "discountPercentage": 11,
+    "sku": "BEA-0054",
+    "brand": "Beats",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/beats-studio-pro-standard.jpg",
+        "alt": "Beats Studio Pro Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Beats Studio Pro Standard",
+      "brand": "Beats",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-02T10:30:00",
+    "updatedAt": "2024-05-25T10:30:00"
+  },
+  {
+    "name": "Sony LinkBuds S Standard",
+    "description": "High-quality Sony LinkBuds S",
+    "price": 2299000,
+    "comparePrice": 2569164,
+    "discountPercentage": 10,
+    "sku": "SON-0055",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/sony-linkbuds-s-standard.jpg",
+        "alt": "Sony LinkBuds S Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Sony LinkBuds S Standard",
+      "brand": "Sony",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-04T10:30:00",
+    "updatedAt": "2024-05-07T10:30:00"
+  },
+  {
+    "name": "Anker Soundcore Liberty 4 Standard",
+    "description": "High-quality Anker Soundcore Liberty 4",
+    "price": 1499000,
+    "comparePrice": 1616504,
+    "discountPercentage": 7,
+    "sku": "ANK-0056",
+    "brand": "Anker",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/anker-soundcore-liberty-4-standard.jpg",
+        "alt": "Anker Soundcore Liberty 4 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Anker Soundcore Liberty 4 Standard",
+      "brand": "Anker",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-06T10:30:00",
+    "updatedAt": "2024-05-18T10:30:00"
+  },
+  {
+    "name": "Bose SoundLink Flex Standard",
+    "description": "High-quality Bose SoundLink Flex",
+    "price": 1799000,
+    "comparePrice": 1957202,
+    "discountPercentage": 8,
+    "sku": "BOS-0057",
+    "brand": "Bose",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c87"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/bose-soundlink-flex-standard.jpg",
+        "alt": "Bose SoundLink Flex Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Bose SoundLink Flex Standard",
+      "brand": "Bose",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-08T10:30:00",
+    "updatedAt": "2024-05-28T10:30:00"
+  },
+  {
+    "name": "PlayStation 5 Digital",
+    "description": "High-quality PlayStation 5 with Digital storage",
+    "price": 7999000,
+    "comparePrice": 8932432,
+    "discountPercentage": 10,
+    "sku": "SON-0058",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/playstation-5-digital.jpg",
+        "alt": "PlayStation 5 Digital",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "PlayStation 5 Digital",
+      "brand": "Sony",
+      "variant": "Digital"
+    },
+    "active": true,
+    "createdAt": "2024-05-10T10:30:00",
+    "updatedAt": "2024-05-28T10:30:00"
+  },
+  {
+    "name": "PlayStation 5 Disc",
+    "description": "High-quality PlayStation 5 with Disc storage",
+    "price": 8798900,
+    "comparePrice": 9400931,
+    "discountPercentage": 6,
+    "sku": "SON-0059",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/playstation-5-disc.jpg",
+        "alt": "PlayStation 5 Disc",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "PlayStation 5 Disc",
+      "brand": "Sony",
+      "variant": "Disc"
+    },
+    "active": true,
+    "createdAt": "2024-05-12T10:30:00",
+    "updatedAt": "2024-05-16T10:30:00"
+  },
+  {
+    "name": "PlayStation 5 Slim",
+    "description": "High-quality PlayStation 5 with Slim storage",
+    "price": 7599050,
+    "comparePrice": 8376254,
+    "discountPercentage": 9,
+    "sku": "SON-0060",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/playstation-5-slim.jpg",
+        "alt": "PlayStation 5 Slim",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "PlayStation 5 Slim",
+      "brand": "Sony",
+      "variant": "Slim"
+    },
+    "active": true,
+    "createdAt": "2024-05-14T10:30:00",
+    "updatedAt": "2024-05-30T10:30:00"
+  },
+  {
+    "name": "Xbox Series X Standard",
+    "description": "High-quality Xbox Series X",
+    "price": 8999000,
+    "comparePrice": 10304238,
+    "discountPercentage": 12,
+    "sku": "MIC-0061",
+    "brand": "Microsoft",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xbox-series-x-standard.jpg",
+        "alt": "Xbox Series X Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xbox Series X Standard",
+      "brand": "Microsoft",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-16T10:30:00",
+    "updatedAt": "2024-05-28T10:30:00"
+  },
+  {
+    "name": "Xbox Series S Standard",
+    "description": "High-quality Xbox Series S",
+    "price": 4999000,
+    "comparePrice": 5462636,
+    "discountPercentage": 8,
+    "sku": "MIC-0062",
+    "brand": "Microsoft",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xbox-series-s-standard.jpg",
+        "alt": "Xbox Series S Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xbox Series S Standard",
+      "brand": "Microsoft",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-18T10:30:00",
+    "updatedAt": "2024-06-02T10:30:00"
+  },
+  {
+    "name": "Nintendo Switch OLED Standard",
+    "description": "High-quality Nintendo Switch OLED",
+    "price": 5499000,
+    "comparePrice": 5931127,
+    "discountPercentage": 7,
+    "sku": "NIN-0063",
+    "brand": "Nintendo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/nintendo-switch-oled-standard.jpg",
+        "alt": "Nintendo Switch OLED Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Nintendo Switch OLED Standard",
+      "brand": "Nintendo",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-20T10:30:00",
+    "updatedAt": "2024-06-10T10:30:00"
+  },
+  {
+    "name": "Nintendo Switch Lite Standard",
+    "description": "High-quality Nintendo Switch Lite",
+    "price": 3499000,
+    "comparePrice": 3914790,
+    "discountPercentage": 10,
+    "sku": "NIN-0064",
+    "brand": "Nintendo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/nintendo-switch-lite-standard.jpg",
+        "alt": "Nintendo Switch Lite Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Nintendo Switch Lite Standard",
+      "brand": "Nintendo",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-22T10:30:00",
+    "updatedAt": "2024-06-16T10:30:00"
+  },
+  {
+    "name": "Steam Deck OLED 512GB",
+    "description": "High-quality Steam Deck OLED with 512GB storage",
+    "price": 8048849,
+    "comparePrice": 9179473,
+    "discountPercentage": 12,
+    "sku": "VAL-0065",
+    "brand": "Valve",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/steam-deck-oled-512gb.jpg",
+        "alt": "Steam Deck OLED 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Steam Deck OLED 512GB",
+      "brand": "Valve",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-05-24T10:30:00",
+    "updatedAt": "2024-06-19T10:30:00"
+  },
+  {
+    "name": "Steam Deck OLED 1TB",
+    "description": "High-quality Steam Deck OLED with 1TB storage",
+    "price": 9098700,
+    "comparePrice": 9623532,
+    "discountPercentage": 5,
+    "sku": "VAL-0066",
+    "brand": "Valve",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/steam-deck-oled-1tb.jpg",
+        "alt": "Steam Deck OLED 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Steam Deck OLED 1TB",
+      "brand": "Valve",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-05-26T10:30:00",
+    "updatedAt": "2024-06-02T10:30:00"
+  },
+  {
+    "name": "PlayStation VR2 Standard",
+    "description": "High-quality PlayStation VR2",
+    "price": 8999000,
+    "comparePrice": 9655300,
+    "discountPercentage": 6,
+    "sku": "SON-0067",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/playstation-vr2-standard.jpg",
+        "alt": "PlayStation VR2 Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "PlayStation VR2 Standard",
+      "brand": "Sony",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-05-28T10:30:00",
+    "updatedAt": "2024-06-01T10:30:00"
+  },
+  {
+    "name": "Meta Quest 3 128GB",
+    "description": "High-quality Meta Quest 3 with 128GB storage",
+    "price": 7999000,
+    "comparePrice": 8886016,
+    "discountPercentage": 9,
+    "sku": "MET-0068",
+    "brand": "Meta",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/meta-quest-3-128gb.jpg",
+        "alt": "Meta Quest 3 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Meta Quest 3 128GB",
+      "brand": "Meta",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-05-30T10:30:00",
+    "updatedAt": "2024-06-27T10:30:00"
+  },
+  {
+    "name": "Meta Quest 3 512GB",
+    "description": "High-quality Meta Quest 3 with 512GB storage",
+    "price": 9198850,
+    "comparePrice": 10326102,
+    "discountPercentage": 10,
+    "sku": "MET-0069",
+    "brand": "Meta",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/meta-quest-3-512gb.jpg",
+        "alt": "Meta Quest 3 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Meta Quest 3 512GB",
+      "brand": "Meta",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-01T10:30:00",
+    "updatedAt": "2024-07-01T10:30:00"
+  },
+  {
+    "name": "PlayStation Portal Standard",
+    "description": "High-quality PlayStation Portal",
+    "price": 3499000,
+    "comparePrice": 3790334,
+    "discountPercentage": 7,
+    "sku": "SON-0070",
+    "brand": "Sony",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/playstation-portal-standard.jpg",
+        "alt": "PlayStation Portal Standard",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "PlayStation Portal Standard",
+      "brand": "Sony",
+      "variant": "Standard"
+    },
+    "active": true,
+    "createdAt": "2024-06-03T10:30:00",
+    "updatedAt": "2024-06-22T10:30:00"
+  },
+  {
+    "name": "Asus ROG Ally 512GB",
+    "description": "High-quality Asus ROG Ally with 512GB storage",
+    "price": 13798849,
+    "comparePrice": 14640738,
+    "discountPercentage": 5,
+    "sku": "ASU-0071",
+    "brand": "Asus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/asus-rog-ally-512gb.jpg",
+        "alt": "Asus ROG Ally 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Asus ROG Ally 512GB",
+      "brand": "Asus",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-05T10:30:00",
+    "updatedAt": "2024-06-25T10:30:00"
+  },
+  {
+    "name": "Asus ROG Ally 1TB",
+    "description": "High-quality Asus ROG Ally with 1TB storage",
+    "price": 15598700,
+    "comparePrice": 16490250,
+    "discountPercentage": 5,
+    "sku": "ASU-0072",
+    "brand": "Asus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c89"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/asus-rog-ally-1tb.jpg",
+        "alt": "Asus ROG Ally 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Asus ROG Ally 1TB",
+      "brand": "Asus",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-06-07T10:30:00",
+    "updatedAt": "2024-06-08T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 128GB",
+    "description": "High-quality iPhone 15 Pro Max with 128GB storage",
+    "price": 15999000,
+    "comparePrice": 17669691,
+    "discountPercentage": 9,
+    "sku": "APP-0073",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-128gb.jpg",
+        "alt": "iPhone 15 Pro Max 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 128GB",
+      "brand": "Apple",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-09T10:30:00",
+    "updatedAt": "2024-06-12T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 256GB",
+    "description": "High-quality iPhone 15 Pro Max with 256GB storage",
+    "price": 15999000,
+    "comparePrice": 17408853,
+    "discountPercentage": 8,
+    "sku": "APP-0074",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-256gb.jpg",
+        "alt": "iPhone 15 Pro Max 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 256GB",
+      "brand": "Apple",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-11T10:30:00",
+    "updatedAt": "2024-07-06T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 512GB",
+    "description": "High-quality iPhone 15 Pro Max with 512GB storage",
+    "price": 18398850,
+    "comparePrice": 20378816,
+    "discountPercentage": 9,
+    "sku": "APP-0075",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-512gb.jpg",
+        "alt": "iPhone 15 Pro Max 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-13T10:30:00",
+    "updatedAt": "2024-07-05T10:30:00"
+  },
+  {
+    "name": "iPhone 15 Pro Max 1TB",
+    "description": "High-quality iPhone 15 Pro Max with 1TB storage",
+    "price": 20798700,
+    "comparePrice": 21964179,
+    "discountPercentage": 5,
+    "sku": "APP-0076",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-15-pro-max-1tb.jpg",
+        "alt": "iPhone 15 Pro Max 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 15 Pro Max 1TB",
+      "brand": "Apple",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-06-15T10:30:00",
+    "updatedAt": "2024-06-30T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 256GB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 256GB storage",
+    "price": 17999000,
+    "comparePrice": 19664822,
+    "discountPercentage": 8,
+    "sku": "SAM-0077",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-256gb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-17T10:30:00",
+    "updatedAt": "2024-06-23T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 512GB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 512GB storage",
+    "price": 20698850,
+    "comparePrice": 23407200,
+    "discountPercentage": 11,
+    "sku": "SAM-0078",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-512gb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-19T10:30:00",
+    "updatedAt": "2024-07-12T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy S24 Ultra 1TB",
+    "description": "High-quality Samsung Galaxy S24 Ultra with 1TB storage",
+    "price": 23398700,
+    "comparePrice": 25932408,
+    "discountPercentage": 9,
+    "sku": "SAM-0079",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-s24-ultra-1tb.jpg",
+        "alt": "Samsung Galaxy S24 Ultra 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy S24 Ultra 1TB",
+      "brand": "Samsung",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-06-21T10:30:00",
+    "updatedAt": "2024-07-12T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 128GB",
+    "description": "High-quality Google Pixel 8 Pro with 128GB storage",
+    "price": 13999000,
+    "comparePrice": 15854407,
+    "discountPercentage": 11,
+    "sku": "GOO-0080",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-128gb.jpg",
+        "alt": "Google Pixel 8 Pro 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 128GB",
+      "brand": "Google",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-23T10:30:00",
+    "updatedAt": "2024-07-12T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 256GB",
+    "description": "High-quality Google Pixel 8 Pro with 256GB storage",
+    "price": 13999000,
+    "comparePrice": 15019625,
+    "discountPercentage": 6,
+    "sku": "GOO-0081",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-256gb.jpg",
+        "alt": "Google Pixel 8 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 256GB",
+      "brand": "Google",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-25T10:30:00",
+    "updatedAt": "2024-06-30T10:30:00"
+  },
+  {
+    "name": "Google Pixel 8 Pro 512GB",
+    "description": "High-quality Google Pixel 8 Pro with 512GB storage",
+    "price": 16098849,
+    "comparePrice": 17352433,
+    "discountPercentage": 7,
+    "sku": "GOO-0082",
+    "brand": "Google",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/google-pixel-8-pro-512gb.jpg",
+        "alt": "Google Pixel 8 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Google Pixel 8 Pro 512GB",
+      "brand": "Google",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-27T10:30:00",
+    "updatedAt": "2024-07-22T10:30:00"
+  },
+  {
+    "name": "OnePlus 12 256GB",
+    "description": "High-quality OnePlus 12 with 256GB storage",
+    "price": 11999000,
+    "comparePrice": 12886923,
+    "discountPercentage": 6,
+    "sku": "ONE-0083",
+    "brand": "OnePlus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oneplus-12-256gb.jpg",
+        "alt": "OnePlus 12 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "OnePlus 12 256GB",
+      "brand": "OnePlus",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-06-29T10:30:00",
+    "updatedAt": "2024-06-30T10:30:00"
+  },
+  {
+    "name": "OnePlus 12 512GB",
+    "description": "High-quality OnePlus 12 with 512GB storage",
+    "price": 13798849,
+    "comparePrice": 15462997,
+    "discountPercentage": 10,
+    "sku": "ONE-0084",
+    "brand": "OnePlus",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oneplus-12-512gb.jpg",
+        "alt": "OnePlus 12 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "OnePlus 12 512GB",
+      "brand": "OnePlus",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-01T10:30:00",
+    "updatedAt": "2024-07-22T10:30:00"
+  },
+  {
+    "name": "Xiaomi 14 Pro 256GB",
+    "description": "High-quality Xiaomi 14 Pro with 256GB storage",
+    "price": 10999000,
+    "comparePrice": 12353221,
+    "discountPercentage": 10,
+    "sku": "XIA-0085",
+    "brand": "Xiaomi",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xiaomi-14-pro-256gb.jpg",
+        "alt": "Xiaomi 14 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xiaomi 14 Pro 256GB",
+      "brand": "Xiaomi",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-03T10:30:00",
+    "updatedAt": "2024-07-22T10:30:00"
+  },
+  {
+    "name": "Xiaomi 14 Pro 512GB",
+    "description": "High-quality Xiaomi 14 Pro with 512GB storage",
+    "price": 12648849,
+    "comparePrice": 14359339,
+    "discountPercentage": 11,
+    "sku": "XIA-0086",
+    "brand": "Xiaomi",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/xiaomi-14-pro-512gb.jpg",
+        "alt": "Xiaomi 14 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Xiaomi 14 Pro 512GB",
+      "brand": "Xiaomi",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-05T10:30:00",
+    "updatedAt": "2024-07-09T10:30:00"
+  },
+  {
+    "name": "iPhone 14 128GB",
+    "description": "High-quality iPhone 14 with 128GB storage",
+    "price": 12999000,
+    "comparePrice": 13719098,
+    "discountPercentage": 5,
+    "sku": "APP-0087",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-128gb.jpg",
+        "alt": "iPhone 14 128GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 128GB",
+      "brand": "Apple",
+      "variant": "128GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-07T10:30:00",
+    "updatedAt": "2024-07-21T10:30:00"
+  },
+  {
+    "name": "iPhone 14 256GB",
+    "description": "High-quality iPhone 14 with 256GB storage",
+    "price": 12999000,
+    "comparePrice": 14819191,
+    "discountPercentage": 12,
+    "sku": "APP-0088",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-256gb.jpg",
+        "alt": "iPhone 14 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 256GB",
+      "brand": "Apple",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-09T10:30:00",
+    "updatedAt": "2024-07-29T10:30:00"
+  },
+  {
+    "name": "iPhone 14 512GB",
+    "description": "High-quality iPhone 14 with 512GB storage",
+    "price": 14948849,
+    "comparePrice": 15710397,
+    "discountPercentage": 4,
+    "sku": "APP-0089",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/iphone-14-512gb.jpg",
+        "alt": "iPhone 14 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "iPhone 14 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-11T10:30:00",
+    "updatedAt": "2024-07-21T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold5 256GB",
+    "description": "High-quality Samsung Galaxy Z Fold5 with 256GB storage",
+    "price": 24999000,
+    "comparePrice": 26498200,
+    "discountPercentage": 5,
+    "sku": "SAM-0090",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-fold5-256gb.jpg",
+        "alt": "Samsung Galaxy Z Fold5 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Fold5 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-13T10:30:00",
+    "updatedAt": "2024-07-20T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Fold5 512GB",
+    "description": "High-quality Samsung Galaxy Z Fold5 with 512GB storage",
+    "price": 28748849,
+    "comparePrice": 30202827,
+    "discountPercentage": 4,
+    "sku": "SAM-0091",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-fold5-512gb.jpg",
+        "alt": "Samsung Galaxy Z Fold5 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Fold5 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-15T10:30:00",
+    "updatedAt": "2024-07-21T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip5 256GB",
+    "description": "High-quality Samsung Galaxy Z Flip5 with 256GB storage",
+    "price": 14999000,
+    "comparePrice": 16835826,
+    "discountPercentage": 10,
+    "sku": "SAM-0092",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-flip5-256gb.jpg",
+        "alt": "Samsung Galaxy Z Flip5 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Flip5 256GB",
+      "brand": "Samsung",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-17T10:30:00",
+    "updatedAt": "2024-08-15T10:30:00"
+  },
+  {
+    "name": "Samsung Galaxy Z Flip5 512GB",
+    "description": "High-quality Samsung Galaxy Z Flip5 with 512GB storage",
+    "price": 17248850,
+    "comparePrice": 18906411,
+    "discountPercentage": 8,
+    "sku": "SAM-0093",
+    "brand": "Samsung",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/samsung-galaxy-z-flip5-512gb.jpg",
+        "alt": "Samsung Galaxy Z Flip5 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Samsung Galaxy Z Flip5 512GB",
+      "brand": "Samsung",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-19T10:30:00",
+    "updatedAt": "2024-07-28T10:30:00"
+  },
+  {
+    "name": "Vivo X100 Pro 256GB",
+    "description": "High-quality Vivo X100 Pro with 256GB storage",
+    "price": 13999000,
+    "comparePrice": 14769369,
+    "discountPercentage": 5,
+    "sku": "VIV-0094",
+    "brand": "Vivo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/vivo-x100-pro-256gb.jpg",
+        "alt": "Vivo X100 Pro 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Vivo X100 Pro 256GB",
+      "brand": "Vivo",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-21T10:30:00",
+    "updatedAt": "2024-08-09T10:30:00"
+  },
+  {
+    "name": "Vivo X100 Pro 512GB",
+    "description": "High-quality Vivo X100 Pro with 512GB storage",
+    "price": 16098849,
+    "comparePrice": 17873349,
+    "discountPercentage": 9,
+    "sku": "VIV-0095",
+    "brand": "Vivo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/vivo-x100-pro-512gb.jpg",
+        "alt": "Vivo X100 Pro 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Vivo X100 Pro 512GB",
+      "brand": "Vivo",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-23T10:30:00",
+    "updatedAt": "2024-08-08T10:30:00"
+  },
+  {
+    "name": "Oppo Find X7 Ultra 256GB",
+    "description": "High-quality Oppo Find X7 Ultra with 256GB storage",
+    "price": 14999000,
+    "comparePrice": 16801437,
+    "discountPercentage": 10,
+    "sku": "OPP-0096",
+    "brand": "Oppo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oppo-find-x7-ultra-256gb.jpg",
+        "alt": "Oppo Find X7 Ultra 256GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Oppo Find X7 Ultra 256GB",
+      "brand": "Oppo",
+      "variant": "256GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-25T10:30:00",
+    "updatedAt": "2024-07-31T10:30:00"
+  },
+  {
+    "name": "Oppo Find X7 Ultra 512GB",
+    "description": "High-quality Oppo Find X7 Ultra with 512GB storage",
+    "price": 17248850,
+    "comparePrice": 19729526,
+    "discountPercentage": 12,
+    "sku": "OPP-0097",
+    "brand": "Oppo",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c86"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/oppo-find-x7-ultra-512gb.jpg",
+        "alt": "Oppo Find X7 Ultra 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "Oppo Find X7 Ultra 512GB",
+      "brand": "Oppo",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-27T10:30:00",
+    "updatedAt": "2024-08-11T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 512GB",
+    "description": "High-quality MacBook Pro 14 with 512GB storage",
+    "price": 34498850,
+    "comparePrice": 37989919,
+    "discountPercentage": 9,
+    "sku": "APP-0098",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-512gb.jpg",
+        "alt": "MacBook Pro 14 512GB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 512GB",
+      "brand": "Apple",
+      "variant": "512GB"
+    },
+    "active": true,
+    "createdAt": "2024-07-29T10:30:00",
+    "updatedAt": "2024-08-25T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 1TB",
+    "description": "High-quality MacBook Pro 14 with 1TB storage",
+    "price": 38998700,
+    "comparePrice": 42296225,
+    "discountPercentage": 7,
+    "sku": "APP-0099",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-1tb.jpg",
+        "alt": "MacBook Pro 14 1TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 1TB",
+      "brand": "Apple",
+      "variant": "1TB"
+    },
+    "active": true,
+    "createdAt": "2024-07-31T10:30:00",
+    "updatedAt": "2024-08-14T10:30:00"
+  },
+  {
+    "name": "MacBook Pro 14 2TB",
+    "description": "High-quality MacBook Pro 14 with 2TB storage",
+    "price": 44998500,
+    "comparePrice": 48577043,
+    "discountPercentage": 7,
+    "sku": "APP-0100",
+    "brand": "Apple",
+    "categoryIds": [
+      "60d21b4667d0d8992e610c85",
+      "60d21b4667d0d8992e610c88"
+    ],
+    "images": [
+      {
+        "url": "https://example.com/images/macbook-pro-14-2tb.jpg",
+        "alt": "MacBook Pro 14 2TB",
+        "isPrimary": true
+      }
+    ],
+    "specifications": {
+      "model": "MacBook Pro 14 2TB",
+      "brand": "Apple",
+      "variant": "2TB"
+    },
+    "active": true,
+    "createdAt": "2024-08-02T10:30:00",
+    "updatedAt": "2024-08-12T10:30:00"
+  }
+]
