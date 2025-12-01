@@ -2,6 +2,8 @@ package com.wijaya.commerce.member.web.controller;
 
 import com.wijaya.commerce.member.commandImpl.model.LoginCommandRequest;
 import com.wijaya.commerce.member.commandImpl.model.LoginCommandResponse;
+import com.wijaya.commerce.member.commandImpl.model.LogoutCommandRequest;
+import com.wijaya.commerce.member.commandImpl.model.LogoutCommandResponse;
 import com.wijaya.commerce.member.commandImpl.model.RegisterCommandRequest;
 import com.wijaya.commerce.member.commandImpl.model.RegisterCommandResponse;
 import com.wijaya.commerce.member.restWebModel.request.LoginRequestWebModel;
@@ -11,10 +13,12 @@ import com.wijaya.commerce.member.restWebModel.response.RegisterResponseWebModel
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wijaya.commerce.member.command.CommandExecutor;
 import com.wijaya.commerce.member.command.LoginCommand;
+import com.wijaya.commerce.member.command.LogoutCommand;
 import com.wijaya.commerce.member.command.RegisterCommand;
 import com.wijaya.commerce.member.constant.MemberApiPath;
 import com.wijaya.commerce.member.restWebModel.response.WebResponse;
@@ -52,6 +56,20 @@ public class MemberController {
 
     return WebResponse.<LoginResponseWebModel>builder().success(true)
         .data(MemberResponseHelper.toLoginResponseWebModel(response)).build();
+  }
+
+  @PostMapping(MemberApiPath.LOGOUT)
+  public WebResponse<LogoutResponseWebModel> logout(@Valid @RequestHeader String request) {
+    LogoutCommandRequest commandRequest = LogoutCommandRequest.builder()
+        .accessToken(request)
+        .build();
+    LogoutCommandResponse response = commandExecutor.execute(LogoutCommand.class, commandRequest);
+
+    LogoutResponseWebModel logoutResponseWebModel = LogoutResponseWebModel.builder()
+        .message(response.getMessage())
+        .build();
+    return WebResponse.<LogoutResponseWebModel>builder().success(true)
+        .data(logoutResponseWebModel).build();
   }
 
 }
