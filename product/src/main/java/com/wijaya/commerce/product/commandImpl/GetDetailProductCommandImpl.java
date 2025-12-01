@@ -31,11 +31,15 @@ public class GetDetailProductCommandImpl implements GetDetailProductCommand {
         .orElseThrow(() -> new RuntimeException("Product not found with SKU: " + commandRequest.getSku()));
 
     List<CategoryDbModel> categories = Collections.emptyList();
-    if (product.getCategoryIds() != null && !product.getCategoryIds().isEmpty()) {
+    if (isCategories(product)) {
       categories = categoryRepository.findAllById(product.getCategoryIds());
     }
 
     return mapToResponse(product, categories);
+  }
+
+  private boolean isCategories(ProductDbModel product) {
+    return product.getCategoryIds() != null && !product.getCategoryIds().isEmpty();
   }
 
   private GetDetailProductCommandResponse mapToResponse(ProductDbModel product, List<CategoryDbModel> categories) {

@@ -32,7 +32,7 @@ public class GetDetailProductWebModel {
     public static class ProductImage {
         private String url;
         private String alt;
-        private Boolean isPrimary;
+        private boolean isPrimary;
     }
 
     @Data
