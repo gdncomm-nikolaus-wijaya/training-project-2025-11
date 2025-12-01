@@ -2,19 +2,19 @@ version: '3.8'
 
 services:
 
-  mongo:
+  mongo_member:
     image: mongo:6.0
     container_name: trainingDev_member_db
     restart: always
     ports:
-      - "27018:27018"
+      - "27018:27017"
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: root
     volumes:
-      - mongo_data:/data/db
+      - mongo_member_data:/data/db
 
 volumes:
-  mongo_data:
+  mongo_member_data:
 
 

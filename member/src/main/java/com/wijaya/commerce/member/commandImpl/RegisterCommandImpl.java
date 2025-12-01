@@ -1,7 +1,9 @@
 package com.wijaya.commerce.member.commandImpl;
 
+import java.time.LocalDateTime;
 import java.util.Optional;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -14,7 +16,7 @@ import com.wijaya.commerce.member.repository.MemberRepository;
 import lombok.AllArgsConstructor;
 
 @Service
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class RegisterCommandImpl implements RegisterCommand {
 
     private final PasswordEncoder passwordEncoder;
@@ -33,6 +35,8 @@ public class RegisterCommandImpl implements RegisterCommand {
                 .name(request.getName())
                 .phoneNumber(request.getPhoneNumber())
                 .password(passwordEncoded)
+                .createdAt(LocalDateTime.now())
+                .updatedAt(LocalDateTime.now())
                 .build();
         memberRepository.save(memberModelDb);
         return toRegisterCommandResponse(memberModelDb);
@@ -43,6 +47,8 @@ public class RegisterCommandImpl implements RegisterCommand {
                 .email(memberModelDb.getEmail())
                 .name(memberModelDb.getName())
                 .phoneNumber(memberModelDb.getPhoneNumber())
+                .createdAt(memberModelDb.getCreatedAt())
+                .updatedAt(memberModelDb.getUpdatedAt())
                 .build();
     }
 
