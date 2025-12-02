@@ -3,10 +3,12 @@ package com.wijaya.commerce.cart.commandImpl;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
+import org.springframework.stereotype.Component;
 
 import com.wijaya.commerce.cart.command.Command;
 import com.wijaya.commerce.cart.command.CommandExecutor;
 
+@Component
 public class DefaultExecutor implements CommandExecutor, ApplicationContextAware {
 
     private ApplicationContext applicationContext;

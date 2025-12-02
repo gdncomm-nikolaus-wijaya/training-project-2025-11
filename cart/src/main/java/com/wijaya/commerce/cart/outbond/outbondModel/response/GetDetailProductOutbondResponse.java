@@ -23,6 +23,7 @@ public class GetDetailProductOutbondResponse {
     private List<ProductImage> images;
     private Map<String, String> specifications;
     private List<CategoryInfo> categories;
+    private Boolean active;
 
     @Data
     @Builder

@@ -7,9 +7,9 @@ import lombok.NoArgsConstructor;
 
 @Data
 @Builder
-@NoArgsConstructor
 @AllArgsConstructor
-public class WebResponse<T> {
-    private boolean success;
-    private T data;
+@NoArgsConstructor
+public class DeleteCartResponseWebModel {
+    private String cartId;
+    private String message;
 }

@@ -1,4 +1,4 @@
-package com.wijaya.commerce.cart.outbond.outbondModel.response;
+package com.wijaya.commerce.cart.commandImpl.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,6 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class WebResponse<T> {
-    private boolean success;
-    private T data;
+public class DeleteCartCommandRequest {
+    private String cartId;
 }

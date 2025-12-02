@@ -26,7 +26,7 @@ public class CartModelDb {
     @Id
     private ObjectId id;
 
-    private ObjectId userId;
+    private String userId;
 
     private List<CartItem> items;
 
@@ -53,6 +53,8 @@ public class CartModelDb {
         private Integer discountPercentage;
 
         private Integer quantity;
+
+        private Integer subTotal;
 
         private LocalDateTime addedAt;
     }

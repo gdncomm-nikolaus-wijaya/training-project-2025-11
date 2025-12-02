@@ -5,10 +5,19 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wijaya.commerce.cart.command.AddToCartCommand;
+import com.wijaya.commerce.cart.command.CommandExecutor;
+import com.wijaya.commerce.cart.command.DeleteCartCommand;
 import com.wijaya.commerce.cart.commandImpl.model.AddToCartCommandRequest;
 import com.wijaya.commerce.cart.commandImpl.model.AddToCartCommandResponse;
+import com.wijaya.commerce.cart.commandImpl.model.DeleteCartCommandRequest;
+import com.wijaya.commerce.cart.commandImpl.model.DeleteCartCommandResponse;
 import com.wijaya.commerce.cart.constant.CartApiPath;
+import com.wijaya.commerce.cart.outbond.outbondModel.response.WebResponse;
 import com.wijaya.commerce.cart.restWebModel.request.AddToCartRequestWebModel;
+import com.wijaya.commerce.cart.restWebModel.request.DeleteCartRequestWebModel;
+import com.wijaya.commerce.cart.restWebModel.response.AddToCartResponseWebModel;
+import com.wijaya.commerce.cart.restWebModel.response.DeleteCartResponseWebModel;
+import com.wijaya.commerce.cart.serviceImpl.helper.CartResponseHelper;
 
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
@@ -16,17 +25,32 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class CartController {
-    private final AddToCartCommand addToCartCommand;
+    private final CommandExecutor executor;
 
     @PostMapping(CartApiPath.ADD_TO_CART)
-    public AddToCartCommandResponse addToCart(@Valid @RequestBody AddToCartRequestWebModel request) {
+    public WebResponse<AddToCartResponseWebModel> addToCart(@Valid @RequestBody AddToCartRequestWebModel request) {
         AddToCartCommandRequest commandRequest = AddToCartCommandRequest.builder()
                 .userId(request.getUserId())
                 .cartId(request.getCartId())
                 .productSku(request.getProductSku())
                 .quantity(request.getQuantity())
                 .build();
-        AddToCartCommandResponse response = addToCartCommand.doCommand(commandRequest);
-        return response;
+        AddToCartCommandResponse response = executor.execute(AddToCartCommand.class, commandRequest);
+        return WebResponse.<AddToCartResponseWebModel>builder().success(true)
+                .data(CartResponseHelper.toAddToCartResponseWebModel(response)).build();
+    }
+
+    @PostMapping(CartApiPath.CLEAR_ALL_CART)
+    public WebResponse<DeleteCartResponseWebModel> clearAllCart(@Valid @RequestBody DeleteCartRequestWebModel request) {
+        DeleteCartCommandRequest commandRequest = DeleteCartCommandRequest.builder()
+                .cartId(request.getCartId()).build();
+
+        DeleteCartCommandResponse commandResponse = executor.execute(DeleteCartCommand.class, commandRequest);
+
+        DeleteCartResponseWebModel response = DeleteCartResponseWebModel.builder()
+                .cartId(commandResponse.getCartId())
+                .message("Cart deleted").build();
+        return WebResponse.<DeleteCartResponseWebModel>builder().success(true)
+                .data(response).build();
     }
 }
