@@ -2,8 +2,6 @@ package com.wijaya.commerce.product.commandImpl;
 
 import java.util.Collections;
 import java.util.List;
-import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
@@ -15,6 +13,8 @@ import com.wijaya.commerce.product.modelDb.CategoryDbModel;
 import com.wijaya.commerce.product.modelDb.ProductDbModel;
 import com.wijaya.commerce.product.repository.CategoryRepository;
 import com.wijaya.commerce.product.repository.ProductRepository;
+import com.wijaya.commerce.product.restWebModel.response.GetDetailProductWebModel;
+import com.wijaya.commerce.product.service.helper.CacheService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -24,9 +24,14 @@ public class GetDetailProductCommandImpl implements GetDetailProductCommand {
 
   private final ProductRepository productRepository;
   private final CategoryRepository categoryRepository;
+  private final CacheService cacheService;
 
   @Override
   public GetDetailProductCommandResponse doCommand(GetDetailProductCommandRequest commandRequest) {
+    GetDetailProductCommandResponse cache = (GetDetailProductCommandResponse) cacheService.get(commandRequest.getSku());
+    if (cache != null) {
+      return cache;
+    }
     ProductDbModel product = productRepository.findBySku(commandRequest.getSku())
         .orElseThrow(() -> new RuntimeException("Product not found with SKU: " + commandRequest.getSku()));
 
@@ -34,15 +39,17 @@ public class GetDetailProductCommandImpl implements GetDetailProductCommand {
     if (isCategories(product)) {
       categories = categoryRepository.findAllById(product.getCategoryIds());
     }
-
-    return mapToResponse(product, categories);
+    GetDetailProductCommandResponse response = mapToResponse(product, categories);
+    cacheService.set(commandRequest.getSku(), response);
+    return response;
   }
 
   private boolean isCategories(ProductDbModel product) {
     return product.getCategoryIds() != null && !product.getCategoryIds().isEmpty();
   }
 
-  private GetDetailProductCommandResponse mapToResponse(ProductDbModel product, List<CategoryDbModel> categories) {
+  private GetDetailProductCommandResponse mapToResponse(ProductDbModel product,
+      List<CategoryDbModel> categories) {
     return GetDetailProductCommandResponse.builder()
         .sku(product.getSku())
         .name(product.getName())
@@ -50,6 +57,7 @@ public class GetDetailProductCommandImpl implements GetDetailProductCommand {
         .brand(product.getBrand())
         .price(product.getPrice())
         .comparePrice(product.getComparePrice())
+        .active(product.getActive())
         .discountPercentage(product.getDiscountPercentage())
         .images(mapImages(product.getImages()))
         .specifications(product.getSpecifications())
