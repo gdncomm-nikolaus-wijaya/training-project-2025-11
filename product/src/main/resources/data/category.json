@@ -1,0 +1,52 @@
+[
+    {
+        "id": "60d21b4667d0d8992e610c85",
+        "name": "Electronics",
+        "slug": "electronics",
+        "description": "Kategori untuk produk elektronik",
+        "image": "https://example.com/categories/electronics.jpg",
+        "sortOrder": 1,
+        "active": true,
+        "createdAt": "2024-01-15T10:30:00"
+    },
+    {
+        "id": "60d21b4667d0d8992e610c86",
+        "name": "Smartphones",
+        "slug": "smartphones",
+        "description": "Kategori untuk smartphone dan tablet",
+        "image": "https://example.com/categories/smartphones.jpg",
+        "sortOrder": 2,
+        "active": true,
+        "createdAt": "2024-01-15T10:30:00"
+    },
+    {
+        "id": "60d21b4667d0d8992e610c87",
+        "name": "Audio",
+        "slug": "audio",
+        "description": "Kategori untuk headphone, speaker, dan audio equipment",
+        "image": "https://example.com/categories/audio.jpg",
+        "sortOrder": 3,
+        "active": true,
+        "createdAt": "2024-01-15T10:30:00"
+    },
+    {
+        "id": "60d21b4667d0d8992e610c88",
+        "name": "Laptops",
+        "slug": "laptops",
+        "description": "Kategori untuk laptop dan komputer",
+        "image": "https://example.com/categories/laptops.jpg",
+        "sortOrder": 4,
+        "active": true,
+        "createdAt": "2024-01-15T10:30:00"
+    },
+    {
+        "id": "60d21b4667d0d8992e610c89",
+        "name": "Gaming",
+        "slug": "gaming",
+        "description": "Kategori untuk konsol game dan accessories gaming",
+        "image": "https://example.com/categories/gaming.jpg",
+        "sortOrder": 5,
+        "active": true,
+        "createdAt": "2024-01-15T10:30:00"
+    }
+]
