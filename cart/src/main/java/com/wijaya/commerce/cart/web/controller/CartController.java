@@ -2,6 +2,7 @@ package com.wijaya.commerce.cart.web.controller;
 
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.wijaya.commerce.cart.command.AddToCartCommand;
@@ -28,9 +29,11 @@ public class CartController {
     private final CommandExecutor executor;
 
     @PostMapping(CartApiPath.ADD_TO_CART)
-    public WebResponse<AddToCartResponseWebModel> addToCart(@Valid @RequestBody AddToCartRequestWebModel request) {
+    public WebResponse<AddToCartResponseWebModel> addToCart(
+        @Valid @RequestBody AddToCartRequestWebModel request,
+        @RequestHeader("X-User-Id") String userId) {
         AddToCartCommandRequest commandRequest = AddToCartCommandRequest.builder()
-                .userId(request.getUserId())
+                .userId(userId)
                 .cartId(request.getCartId())
                 .productSku(request.getProductSku())
                 .quantity(request.getQuantity())
@@ -41,9 +44,12 @@ public class CartController {
     }
 
     @PostMapping(CartApiPath.CLEAR_ALL_CART)
-    public WebResponse<DeleteCartResponseWebModel> clearAllCart(@Valid @RequestBody DeleteCartRequestWebModel request) {
+    public WebResponse<DeleteCartResponseWebModel> clearAllCart(@Valid 
+        @RequestBody DeleteCartRequestWebModel request,
+        @RequestHeader("X-User-Id") String userId) {
         DeleteCartCommandRequest commandRequest = DeleteCartCommandRequest.builder()
-                .cartId(request.getCartId()).build();
+                .cartId(request.getCartId())
+                .userId(userId).build();
 
         DeleteCartCommandResponse commandResponse = executor.execute(DeleteCartCommand.class, commandRequest);
 

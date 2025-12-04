@@ -5,6 +5,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.wijaya.commerce.cart.constant.ProductApiPath;
 import com.wijaya.commerce.cart.outbond.outbondModel.response.GetDetailProductOutbondResponse;
 import com.wijaya.commerce.cart.outbond.outbondModel.response.WebResponse;
 import com.wijaya.commerce.cart.outbond.outbondService.ProductOutbondService;
@@ -30,7 +31,7 @@ public class ProductOutbondServiceImpl implements ProductOutbondService {
         try {
             WebResponse<GetDetailProductOutbondResponse> wrapper = webClient.get()
                     .uri(uriBuilder -> uriBuilder
-                            .path("/api/v1/product/" + sku)
+                            .path(ProductApiPath.GET_DETAIL_PRODUCT+sku)
                             .build())
                     .retrieve()
                     .bodyToMono(new ParameterizedTypeReference<WebResponse<GetDetailProductOutbondResponse>>() {

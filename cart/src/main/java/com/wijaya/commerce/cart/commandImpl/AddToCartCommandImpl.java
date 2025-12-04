@@ -7,9 +7,15 @@ import java.util.stream.Collectors;
 
 import org.springframework.stereotype.Service;
 
+import lombok.extern.slf4j.Slf4j;
+
 import com.wijaya.commerce.cart.command.AddToCartCommand;
 import com.wijaya.commerce.cart.commandImpl.model.AddToCartCommandRequest;
 import com.wijaya.commerce.cart.commandImpl.model.AddToCartCommandResponse;
+import com.wijaya.commerce.cart.exception.ProductNotActiveException;
+import com.wijaya.commerce.cart.exception.ProductNotFoundException;
+import com.wijaya.commerce.cart.exception.UserNotActiveException;
+import com.wijaya.commerce.cart.exception.UserNotFoundException;
 import com.wijaya.commerce.cart.modelDb.CartModelDb;
 import com.wijaya.commerce.cart.modelDb.CartModelDb.CartItem;
 import com.wijaya.commerce.cart.outbond.outbondModel.response.GetDetailProductOutbondResponse;
@@ -20,6 +26,7 @@ import com.wijaya.commerce.cart.repository.CartRepository;
 
 import lombok.RequiredArgsConstructor;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AddToCartCommandImpl implements AddToCartCommand {
@@ -32,25 +39,55 @@ public class AddToCartCommandImpl implements AddToCartCommand {
 
     @Override
     public AddToCartCommandResponse doCommand(AddToCartCommandRequest request) {
-        GetDetailUserOutbondResponse user = getUser(request.getUserId());
-        GetDetailProductOutbondResponse product = getProduct(request.getProductSku());
-        checkUserExistAndActive(user);
-        checkProductExistAndActive(product);
-        CartModelDb cartModelDb;
-        if (request.getCartId() != null && cartRepository.existsById(request.getCartId())) {
-            cartModelDb = cartRepository.findById(request.getCartId()).get();
-            List<CartItem> items = cartModelDb.getItems();
-            if (items == null) {
-                items = new ArrayList<>();
-            }
-            cartModelDb.setItems(constructCartItem(items, product, request));
-            cartModelDb.setUpdatedAt(LocalDateTime.now());
-        } else {
-            cartModelDb = constructCartModelDb(new ArrayList<>(), request, product);
-        }
-        cartRepository.save(cartModelDb);
+        log.info("Starting add to cart command for userId: {}, productSku: {}, quantity: {}, cartId: {}",
+                request.getUserId(), request.getProductSku(), request.getQuantity(), request.getCartId());
 
-        return addToCartToResponse(cartModelDb);
+        try {
+            // Get and validate user
+            GetDetailUserOutbondResponse user = getUser(request.getUserId());
+            checkUserExistAndActive(user);
+
+            // Get and validate product
+            GetDetailProductOutbondResponse product = getProduct(request.getProductSku());
+            checkProductExistAndActive(product);
+
+            CartModelDb cartModelDb;
+            if (request.getCartId() != null && request.getUserId() != null
+                    && cartRepository.existsByIdAndUserId(request.getCartId(), request.getUserId())) {
+                cartModelDb = cartRepository.findByIdAndUserId(request.getCartId(), request.getUserId()).get();
+                List<CartItem> items = cartModelDb.getItems();
+                if (items == null) {
+                    items = new ArrayList<>();
+                }
+
+                if (items.stream().anyMatch(item -> item.getProductSku().equals(request.getProductSku()))) {
+                    // Update existing item
+                    CartItem item = items.stream()
+                            .filter(i -> i.getProductSku().equals(request.getProductSku()))
+                            .findFirst()
+                            .get();
+                    item.setQuantity(request.getQuantity());
+                    item.setSubTotal((int) (product.getPrice() * item.getQuantity()));
+                    item.setAddedAt(LocalDateTime.now());
+                } else {
+                    // Add new item to the cart
+                    items = constructCartItem(items, product, request);
+                }
+                cartModelDb.setItems(items);
+                cartModelDb.setUpdatedAt(LocalDateTime.now());
+            } else {
+                cartModelDb = constructCartModelDb(new ArrayList<>(), request, product);
+            }
+            cartRepository.save(cartModelDb);
+
+            AddToCartCommandResponse response = addToCartToResponse(cartModelDb);
+            return response;
+
+        } catch (RuntimeException e) {
+            log.error("Error executing add to cart command for userId: {}, productSku: {}, error: {}",
+                    request.getUserId(), request.getProductSku(), e.getMessage(), e);
+            throw e;
+        }
     }
 
     private AddToCartCommandResponse addToCartToResponse(CartModelDb cartModelDb) {
@@ -107,30 +144,44 @@ public class AddToCartCommandImpl implements AddToCartCommand {
 
     private void checkUserExistAndActive(GetDetailUserOutbondResponse user) {
         if (user == null) {
-            throw new RuntimeException("User not found");
+            log.error("User not found");
+            throw new UserNotFoundException("User not found");
         }
         if (!user.getStatus().equals("ACTIVE")) {
-            throw new RuntimeException("User not active");
+            log.error("User is not active, status: {}", user.getStatus());
+            throw new UserNotActiveException("User not active");
         }
     }
 
     private void checkProductExistAndActive(GetDetailProductOutbondResponse product) {
         if (product == null) {
-            throw new RuntimeException("Product not found");
+            log.error("Product not found");
+            throw new ProductNotFoundException("Product not found");
         }
         if (!product.getActive()) {
-            throw new RuntimeException("Product not active");
+            log.error("Product is not active for sku: {}", product.getSku());
+            throw new ProductNotActiveException("Product not active");
         }
     }
 
     private GetDetailUserOutbondResponse getUser(String userId) {
-        GetDetailUserOutbondResponse user = userOutbondService.getUserDetail(userId);
-        return user;
+        try {
+            GetDetailUserOutbondResponse user = userOutbondService.getUserDetail(userId);
+            return user;
+        } catch (Exception e) {
+            log.error("Failed to fetch user details for userId: {}, error: {}", userId, e.getMessage(), e);
+            throw new RuntimeException("Failed to fetch user details", e);
+        }
     }
 
     private GetDetailProductOutbondResponse getProduct(String sku) {
-        GetDetailProductOutbondResponse product = productOutbondService.getProductDetail(sku);
-        return product;
+        try {
+            GetDetailProductOutbondResponse product = productOutbondService.getProductDetail(sku);
+            return product;
+        } catch (Exception e) {
+            log.error("Failed to fetch product details for sku: {}, error: {}", sku, e.getMessage(), e);
+            throw new RuntimeException("Failed to fetch product details", e);
+        }
     }
 
 }

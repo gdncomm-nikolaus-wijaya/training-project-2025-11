@@ -11,4 +11,5 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 public class DeleteCartCommandRequest {
     private String cartId;
+    private String userId;
 }

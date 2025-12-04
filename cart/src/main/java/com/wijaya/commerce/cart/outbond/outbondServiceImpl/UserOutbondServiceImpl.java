@@ -5,6 +5,7 @@ import org.springframework.core.ParameterizedTypeReference;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
+import com.wijaya.commerce.cart.constant.MemberApiPath;
 import com.wijaya.commerce.cart.outbond.outbondModel.response.GetDetailUserOutbondResponse;
 import com.wijaya.commerce.cart.outbond.outbondModel.response.WebResponse;
 import com.wijaya.commerce.cart.outbond.outbondService.UserOutbondService;
@@ -30,7 +31,7 @@ public class UserOutbondServiceImpl implements UserOutbondService {
         try {
             WebResponse<GetDetailUserOutbondResponse> wrapper = webClient.get()
                     .uri(uriBuilder -> uriBuilder
-                            .path("/user-detail")
+                            .path(MemberApiPath.GET_DETAIL_USER)
                             .queryParam("userId", id)
                             .build())
                     .retrieve()
