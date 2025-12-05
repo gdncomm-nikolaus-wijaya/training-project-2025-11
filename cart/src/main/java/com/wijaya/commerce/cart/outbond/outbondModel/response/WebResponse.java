@@ -1,4 +1,4 @@
-package com.wijaya.commerce.member.web.controller;
+package com.wijaya.commerce.cart.outbond.outbondModel.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -6,9 +6,10 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
+@Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
-public class LogoutResponseWebModel {
-    private String message;
+public class WebResponse<T> {
+    private boolean success;
+    private T data;
 }
