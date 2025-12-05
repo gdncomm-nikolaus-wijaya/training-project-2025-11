@@ -1,4 +1,4 @@
-package com.wijaya.commerce.cart.outbond.outbondModel.response;
+package com.wijaya.commerce.eag.restWebModel.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

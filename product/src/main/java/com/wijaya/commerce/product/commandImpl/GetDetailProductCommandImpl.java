@@ -15,9 +15,12 @@ import com.wijaya.commerce.product.repository.CategoryRepository;
 import com.wijaya.commerce.product.repository.ProductRepository;
 import com.wijaya.commerce.product.restWebModel.response.GetDetailProductWebModel;
 import com.wijaya.commerce.product.service.helper.CacheService;
+import com.wijaya.commerce.product.exception.ProductNotFoundException;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class GetDetailProductCommandImpl implements GetDetailProductCommand {
@@ -28,19 +31,32 @@ public class GetDetailProductCommandImpl implements GetDetailProductCommand {
 
   @Override
   public GetDetailProductCommandResponse doCommand(GetDetailProductCommandRequest commandRequest) {
-    GetDetailProductCommandResponse cache = (GetDetailProductCommandResponse) cacheService.get(commandRequest.getSku());
-    if (cache != null) {
-      return cache;
+    GetDetailProductCommandResponse cache = null;
+    try {
+      cache = (GetDetailProductCommandResponse) cacheService.get(commandRequest.getSku());
+      if (cache != null) {
+        return cache;
+      }
+    } catch (Exception e) {
+      log.warn("Failed to retrieve from cache for SKU: {}. Error: {}", commandRequest.getSku(), e.getMessage());
     }
     ProductDbModel product = productRepository.findBySku(commandRequest.getSku())
-        .orElseThrow(() -> new RuntimeException("Product not found with SKU: " + commandRequest.getSku()));
+        .orElseThrow(() -> {
+          log.error("Product not found with SKU: {}", commandRequest.getSku());
+          return new ProductNotFoundException("Product with sku " + commandRequest.getSku() + " not found");
+        });
 
     List<CategoryDbModel> categories = Collections.emptyList();
     if (isCategories(product)) {
       categories = categoryRepository.findAllById(product.getCategoryIds());
     }
     GetDetailProductCommandResponse response = mapToResponse(product, categories);
-    cacheService.set(commandRequest.getSku(), response);
+
+    try {
+      cacheService.set(commandRequest.getSku(), response);
+    } catch (Exception e) {
+      log.warn("Failed to cache product with SKU: {}. Error: {}", commandRequest.getSku(), e.getMessage());
+    }
     return response;
   }
 

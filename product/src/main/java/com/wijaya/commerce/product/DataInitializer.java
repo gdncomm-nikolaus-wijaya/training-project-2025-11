@@ -128,6 +128,30 @@ public class DataInitializer implements CommandLineRunner {
                             .named("idx_product_search"));
             log.info("Created compound index: idx_product_search on Product collection");
 
+            mongoTemplate.indexOps(ProductDbModel.class)
+                    .ensureIndex(new Index()
+                            .on("name", Sort.Direction.ASC)
+                            .named("idx_product_name"));
+            log.info("Created index: idx_product_name on Product collection");
+
+            mongoTemplate.indexOps(ProductDbModel.class)
+                    .ensureIndex(new Index()
+                            .on("price", Sort.Direction.ASC)
+                            .named("idx_product_price"));
+            log.info("Created index: idx_product_price on Product collection");
+
+            mongoTemplate.indexOps(ProductDbModel.class)
+                    .ensureIndex(new Index()
+                            .on("brand", Sort.Direction.ASC)
+                            .named("idx_product_brand"));
+            log.info("Created index: idx_product_brand on Product collection");
+
+            mongoTemplate.indexOps(ProductDbModel.class)
+                    .ensureIndex(new Index()
+                            .on("categoryIds", Sort.Direction.ASC)
+                            .named("idx_product_categoryIds"));
+            log.info("Created index: idx_product_categoryIds on Product collection");
+
             log.info("Successfully created all MongoDB indexes");
 
         } catch (Exception e) {

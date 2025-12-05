@@ -9,4 +9,5 @@ import com.wijaya.commerce.member.modelDb.MemberModelDb;
 public interface MemberRepository extends MongoRepository<MemberModelDb, String> {
     Optional<MemberModelDb> findByEmail(String email);
 
+    Optional<MemberModelDb> findByPhoneNumber(String phoneNumber);
 }

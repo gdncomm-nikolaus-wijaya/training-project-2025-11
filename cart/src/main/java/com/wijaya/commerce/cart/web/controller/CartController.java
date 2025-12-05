@@ -13,7 +13,7 @@ import com.wijaya.commerce.cart.commandImpl.model.AddToCartCommandResponse;
 import com.wijaya.commerce.cart.commandImpl.model.DeleteCartCommandRequest;
 import com.wijaya.commerce.cart.commandImpl.model.DeleteCartCommandResponse;
 import com.wijaya.commerce.cart.constant.CartApiPath;
-import com.wijaya.commerce.cart.outbond.outbondModel.response.WebResponse;
+import com.wijaya.commerce.cart.outbound.outboundModel.response.WebResponse;
 import com.wijaya.commerce.cart.restWebModel.request.AddToCartRequestWebModel;
 import com.wijaya.commerce.cart.restWebModel.request.DeleteCartRequestWebModel;
 import com.wijaya.commerce.cart.restWebModel.response.AddToCartResponseWebModel;
@@ -26,37 +26,37 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class CartController {
-    private final CommandExecutor executor;
+        private final CommandExecutor executor;
 
-    @PostMapping(CartApiPath.ADD_TO_CART)
-    public WebResponse<AddToCartResponseWebModel> addToCart(
-        @Valid @RequestBody AddToCartRequestWebModel request,
-        @RequestHeader("X-User-Id") String userId) {
-        AddToCartCommandRequest commandRequest = AddToCartCommandRequest.builder()
-                .userId(userId)
-                .cartId(request.getCartId())
-                .productSku(request.getProductSku())
-                .quantity(request.getQuantity())
-                .build();
-        AddToCartCommandResponse response = executor.execute(AddToCartCommand.class, commandRequest);
-        return WebResponse.<AddToCartResponseWebModel>builder().success(true)
-                .data(CartResponseHelper.toAddToCartResponseWebModel(response)).build();
-    }
+        @PostMapping(CartApiPath.ADD_TO_CART)
+        public WebResponse<AddToCartResponseWebModel> addToCart(
+                        @Valid @RequestBody AddToCartRequestWebModel request,
+                        @RequestHeader(value = "X-User-Id", required = true) String userId) {
+                AddToCartCommandRequest commandRequest = AddToCartCommandRequest.builder()
+                                .userId(userId)
+                                .cartId(request.getCartId())
+                                .productSku(request.getProductSku())
+                                .quantity(request.getQuantity())
+                                .build();
+                AddToCartCommandResponse response = executor.execute(AddToCartCommand.class, commandRequest);
+                return WebResponse.<AddToCartResponseWebModel>builder().success(true)
+                                .data(CartResponseHelper.toAddToCartResponseWebModel(response)).build();
+        }
 
-    @PostMapping(CartApiPath.CLEAR_ALL_CART)
-    public WebResponse<DeleteCartResponseWebModel> clearAllCart(@Valid 
-        @RequestBody DeleteCartRequestWebModel request,
-        @RequestHeader("X-User-Id") String userId) {
-        DeleteCartCommandRequest commandRequest = DeleteCartCommandRequest.builder()
-                .cartId(request.getCartId())
-                .userId(userId).build();
+        @PostMapping(CartApiPath.CLEAR_ALL_CART)
+        public WebResponse<DeleteCartResponseWebModel> clearAllCart(
+                        @Valid @RequestBody DeleteCartRequestWebModel request,
+                        @RequestHeader(value = "X-User-Id", required = true) String userId) {
+                DeleteCartCommandRequest commandRequest = DeleteCartCommandRequest.builder()
+                                .cartId(request.getCartId())
+                                .userId(userId).build();
 
-        DeleteCartCommandResponse commandResponse = executor.execute(DeleteCartCommand.class, commandRequest);
+                DeleteCartCommandResponse commandResponse = executor.execute(DeleteCartCommand.class, commandRequest);
 
-        DeleteCartResponseWebModel response = DeleteCartResponseWebModel.builder()
-                .cartId(commandResponse.getCartId())
-                .message("Cart deleted").build();
-        return WebResponse.<DeleteCartResponseWebModel>builder().success(true)
-                .data(response).build();
-    }
+                DeleteCartResponseWebModel response = DeleteCartResponseWebModel.builder()
+                                .cartId(commandResponse.getCartId())
+                                .message("Cart deleted").build();
+                return WebResponse.<DeleteCartResponseWebModel>builder().success(true)
+                                .data(response).build();
+        }
 }

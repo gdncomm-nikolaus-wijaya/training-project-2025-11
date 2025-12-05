@@ -4,17 +4,19 @@ import java.time.LocalDateTime;
 import java.util.Optional;
 
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.wijaya.commerce.member.command.RegisterCommand;
 import com.wijaya.commerce.member.commandImpl.model.RegisterCommandRequest;
 import com.wijaya.commerce.member.commandImpl.model.RegisterCommandResponse;
+import com.wijaya.commerce.member.exception.EmailAlreadyExistsException;
+import com.wijaya.commerce.member.exception.PhoneNumberAlreadyExistsException;
 import com.wijaya.commerce.member.modelDb.MemberModelDb;
 import com.wijaya.commerce.member.repository.MemberRepository;
 
-import lombok.AllArgsConstructor;
-
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class RegisterCommandImpl implements RegisterCommand {
@@ -26,10 +28,27 @@ public class RegisterCommandImpl implements RegisterCommand {
     public RegisterCommandResponse doCommand(RegisterCommandRequest request) {
         Optional<MemberModelDb> account = memberRepository.findByEmail(request.getEmail());
         if (account.isPresent()) {
-            throw new RuntimeException("Email already exists");
+            log.warn("Registration failed - email already exists: {}", request.getEmail());
+            throw new EmailAlreadyExistsException("Email already exists");
         }
 
-        String passwordEncoded = passwordEncoder.encode(request.getPassword());
+        Optional<MemberModelDb> phoneNumber = memberRepository.findByPhoneNumber(request.getPhoneNumber());
+        if (phoneNumber.isPresent()) {
+            log.warn("Registration failed - phone number already exists: {}", request.getPhoneNumber());
+            throw new PhoneNumberAlreadyExistsException("Phone number already exists");
+        }
+
+        // Encode password
+        String passwordEncoded;
+        try {
+            passwordEncoded = passwordEncoder.encode(request.getPassword());
+            log.debug("Password encoded successfully for email: {}", request.getEmail());
+        } catch (Exception e) {
+            log.error("Failed to encode password for email: {}", request.getEmail(), e);
+            throw new RuntimeException("Failed to encode password", e);
+        }
+
+        // Build member model
         MemberModelDb memberModelDb = MemberModelDb.builder()
                 .email(request.getEmail())
                 .name(request.getName())
@@ -39,7 +58,14 @@ public class RegisterCommandImpl implements RegisterCommand {
                 .createdAt(LocalDateTime.now())
                 .updatedAt(LocalDateTime.now())
                 .build();
-        memberRepository.save(memberModelDb);
+
+        try {
+            memberRepository.save(memberModelDb);
+        } catch (Exception e) {
+            log.error("Failed to save member to database for email: {}", request.getEmail(), e);
+            throw new RuntimeException("Failed to save member", e);
+        }
+
         return toRegisterCommandResponse(memberModelDb);
     }
 

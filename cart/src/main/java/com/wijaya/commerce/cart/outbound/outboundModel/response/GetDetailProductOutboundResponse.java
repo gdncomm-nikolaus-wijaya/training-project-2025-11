@@ -1,4 +1,4 @@
-package com.wijaya.commerce.cart.outbond.outbondModel.response;
+package com.wijaya.commerce.cart.outbound.outboundModel.response;
 
 import java.util.List;
 import java.util.Map;
@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class GetDetailProductOutbondResponse {
+public class GetDetailProductOutboundResponse {
     private String sku;
     private String name;
     private String description;

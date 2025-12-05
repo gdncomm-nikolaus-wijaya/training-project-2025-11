@@ -18,10 +18,11 @@ import com.wijaya.commerce.cart.exception.UserNotActiveException;
 import com.wijaya.commerce.cart.exception.UserNotFoundException;
 import com.wijaya.commerce.cart.modelDb.CartModelDb;
 import com.wijaya.commerce.cart.modelDb.CartModelDb.CartItem;
-import com.wijaya.commerce.cart.outbond.outbondModel.response.GetDetailProductOutbondResponse;
-import com.wijaya.commerce.cart.outbond.outbondModel.response.GetDetailUserOutbondResponse;
-import com.wijaya.commerce.cart.outbond.outbondService.ProductOutbondService;
-import com.wijaya.commerce.cart.outbond.outbondService.UserOutbondService;
+import com.wijaya.commerce.cart.outbound.outboundModel.response.GetDetailProductOutboundResponse;
+import com.wijaya.commerce.cart.outbound.outboundModel.response.GetDetailUserOutboundResponse;
+import com.wijaya.commerce.cart.outbound.outboundModel.response.WebResponse;
+import com.wijaya.commerce.cart.outbound.outboundService.ProductOutboundService;
+import com.wijaya.commerce.cart.outbound.outboundService.UserOutboundService;
 import com.wijaya.commerce.cart.repository.CartRepository;
 
 import lombok.RequiredArgsConstructor;
@@ -31,9 +32,9 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AddToCartCommandImpl implements AddToCartCommand {
 
-    private final UserOutbondService userOutbondService;
+    private final UserOutboundService userOutbondService;
 
-    private final ProductOutbondService productOutbondService;
+    private final ProductOutboundService productOutbondService;
 
     private final CartRepository cartRepository;
 
@@ -44,12 +45,15 @@ public class AddToCartCommandImpl implements AddToCartCommand {
 
         try {
             // Get and validate user
-            GetDetailUserOutbondResponse user = getUser(request.getUserId());
+            WebResponse<?> user = getUser(request.getUserId());
             checkUserExistAndActive(user);
 
             // Get and validate product
-            GetDetailProductOutbondResponse product = getProduct(request.getProductSku());
+            WebResponse<?> product = getProduct(request.getProductSku());
             checkProductExistAndActive(product);
+
+            // Extract and convert product data after validation
+            GetDetailProductOutboundResponse productData = extractProductData(product);
 
             CartModelDb cartModelDb;
             if (request.getCartId() != null && request.getUserId() != null
@@ -67,16 +71,16 @@ public class AddToCartCommandImpl implements AddToCartCommand {
                             .findFirst()
                             .get();
                     item.setQuantity(request.getQuantity());
-                    item.setSubTotal((int) (product.getPrice() * item.getQuantity()));
+                    item.setSubTotal((int) (productData.getPrice() * item.getQuantity()));
                     item.setAddedAt(LocalDateTime.now());
                 } else {
                     // Add new item to the cart
-                    items = constructCartItem(items, product, request);
+                    items = constructCartItem(items, productData, request);
                 }
                 cartModelDb.setItems(items);
                 cartModelDb.setUpdatedAt(LocalDateTime.now());
             } else {
-                cartModelDb = constructCartModelDb(new ArrayList<>(), request, product);
+                cartModelDb = constructCartModelDb(new ArrayList<>(), request, productData);
             }
             cartRepository.save(cartModelDb);
 
@@ -116,7 +120,7 @@ public class AddToCartCommandImpl implements AddToCartCommand {
     }
 
     private CartModelDb constructCartModelDb(List<CartItem> cartItems, AddToCartCommandRequest request,
-            GetDetailProductOutbondResponse product) {
+            GetDetailProductOutboundResponse product) {
         CartModelDb cartModelDb = CartModelDb.builder()
                 .userId(request.getUserId())
                 .items(constructCartItem(cartItems, product, request))
@@ -127,7 +131,7 @@ public class AddToCartCommandImpl implements AddToCartCommand {
         return cartModelDb;
     }
 
-    private List<CartItem> constructCartItem(List<CartItem> cartItems, GetDetailProductOutbondResponse product,
+    private List<CartItem> constructCartItem(List<CartItem> cartItems, GetDetailProductOutboundResponse product,
             AddToCartCommandRequest request) {
         cartItems.add(CartItem.builder()
                 .productSku(product.getSku())
@@ -142,42 +146,88 @@ public class AddToCartCommandImpl implements AddToCartCommand {
         return cartItems;
     }
 
-    private void checkUserExistAndActive(GetDetailUserOutbondResponse user) {
-        if (user == null) {
-            log.error("User not found");
+    private void checkUserExistAndActive(WebResponse<?> user) {
+        // Check if response is null or unsuccessful
+        if (user == null || !user.isSuccess()) {
+            log.error("User validation failed - response is null or unsuccessful");
             throw new UserNotFoundException("User not found");
         }
-        if (!user.getStatus().equals("ACTIVE")) {
-            log.error("User is not active, status: {}", user.getStatus());
+
+        GetDetailUserOutboundResponse userDetail = extractUserData(user);
+
+        if (!userDetail.getStatus().equals("ACTIVE")) {
+            log.error("User is not active, status: {}", userDetail.getStatus());
             throw new UserNotActiveException("User not active");
         }
     }
 
-    private void checkProductExistAndActive(GetDetailProductOutbondResponse product) {
-        if (product == null) {
-            log.error("Product not found");
+    private void checkProductExistAndActive(WebResponse<?> product) {
+        // Check if response is null or unsuccessful
+        if (product == null || !product.isSuccess()) {
+            log.error("Product validation failed - response is null or unsuccessful");
             throw new ProductNotFoundException("Product not found");
         }
-        if (!product.getActive()) {
-            log.error("Product is not active for sku: {}", product.getSku());
+        
+        GetDetailProductOutboundResponse productDetail = extractProductData(product);
+        
+        if (!productDetail.getActive()) {
+            log.error("Product is not active for sku: {}", productDetail.getSku());
             throw new ProductNotActiveException("Product not active");
         }
     }
 
-    private GetDetailUserOutbondResponse getUser(String userId) {
+    private GetDetailUserOutboundResponse extractUserData(WebResponse<?> user) {
+        if (user.getData() instanceof String) {
+            throw new UserNotFoundException("User not found");
+        } else if (user.getData() instanceof java.util.Map) {
+            // Jackson deserialized as LinkedHashMap, convert to proper type
+            try {
+                com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+                return mapper.convertValue(user.getData(), GetDetailUserOutboundResponse.class);
+            } catch (Exception e) {
+                log.error("Failed to convert user data from Map", e);
+                throw new UserNotFoundException("Invalid user data format");
+            }
+        } else if (user.getData() instanceof GetDetailUserOutboundResponse) {
+            return (GetDetailUserOutboundResponse) user.getData();
+        } else {
+            log.error("Unexpected data type in user response: {}", user.getData().getClass());
+            throw new UserNotFoundException("User not found");
+        }
+    }
+
+    private GetDetailProductOutboundResponse extractProductData(WebResponse<?> product) {
+        if (product.getData() instanceof String) {
+            throw new ProductNotFoundException("Product not found");
+        } else if (product.getData() instanceof java.util.Map) {
+            // Jackson deserialized as LinkedHashMap, convert to proper type
+            try {
+                com.fasterxml.jackson.databind.ObjectMapper mapper = new com.fasterxml.jackson.databind.ObjectMapper();
+                return mapper.convertValue(product.getData(), GetDetailProductOutboundResponse.class);
+            } catch (Exception e) {
+                log.error("Failed to convert product data from Map", e);
+                throw new ProductNotFoundException("Invalid product data format");
+            }
+        } else if (product.getData() instanceof GetDetailProductOutboundResponse) {
+            return (GetDetailProductOutboundResponse) product.getData();
+        } else {
+            log.error("Unexpected data type in product response: {}", product.getData().getClass());
+            throw new ProductNotFoundException("Product not found");
+        }
+    }
+
+    private WebResponse<?> getUser(String userId) {
         try {
-            GetDetailUserOutbondResponse user = userOutbondService.getUserDetail(userId);
-            return user;
+            return userOutbondService.getUserDetail(userId);
         } catch (Exception e) {
             log.error("Failed to fetch user details for userId: {}, error: {}", userId, e.getMessage(), e);
             throw new RuntimeException("Failed to fetch user details", e);
         }
     }
 
-    private GetDetailProductOutbondResponse getProduct(String sku) {
+    private WebResponse<?> getProduct(String sku) {
         try {
-            GetDetailProductOutbondResponse product = productOutbondService.getProductDetail(sku);
-            return product;
+            return productOutbondService.getProductDetail(sku);
         } catch (Exception e) {
             log.error("Failed to fetch product details for sku: {}, error: {}", sku, e.getMessage(), e);
             throw new RuntimeException("Failed to fetch product details", e);

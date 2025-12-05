@@ -1,4 +1,4 @@
-package com.wijaya.commerce.cart.outbond.outbondModel.response;
+package com.wijaya.commerce.cart.outbound.outboundModel.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class GetDetailUserOutbondResponse {
+public class GetDetailUserOutboundResponse {
     private String id;
     private String email;
     private String phoneNumber;

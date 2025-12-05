@@ -5,5 +5,5 @@ public final class MemberApiPath {
     public static final String REGISTER = BASE_PATH + "/register";
     public static final String LOGIN = BASE_PATH + "/login";
     public static final String LOGOUT = BASE_PATH + "/logout";
-    public static final String GET_USER_DETAIL = "/user-detail";
+    public static final String GET_USER_DETAIL = BASE_PATH + "/user-detail";
 }

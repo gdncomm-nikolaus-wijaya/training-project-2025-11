@@ -1,0 +1,32 @@
+{
+    "sku": "SAMSUNG-S23-ULTRA",
+    "name": "Samsung Galaxy S23 Ultra",
+    "description": "The ultimate Galaxy smartphone",
+    "brand": "Samsung",
+    "price": 19999000,
+    "comparePrice": 21999000,
+    "active": true,
+    "discountPercentage": 9,
+    "images": [
+        {
+            "url": "https://example.com/s23-ultra-1.jpg",
+            "alt": "Samsung Galaxy S23 Ultra Front",
+            "isPrimary": true
+        },
+        {
+            "url": "https://example.com/s23-ultra-2.jpg",
+            "alt": "Samsung Galaxy S23 Ultra Back",
+            "isPrimary": false
+        }
+    ],
+    "specifications": {
+        "Color": "Phantom Black",
+        "Storage": "256GB"
+    },
+    "categoryIds": [
+        "cat-001",
+        "cat-002"
+    ],
+    "createdAt": "2023-10-01T10:00:00Z",
+    "updatedAt": "2023-10-01T10:00:00Z"
+}

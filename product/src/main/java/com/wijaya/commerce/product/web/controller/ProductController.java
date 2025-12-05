@@ -24,52 +24,52 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 public class ProductController {
-  private final CommandExecutor commandExecutor;
+    private final CommandExecutor commandExecutor;
 
-  @GetMapping(ProductApiPath.PRODUCT + "/{sku}")
-  public WebResponse<GetDetailProductWebModel> getProduct(@PathVariable String sku) {
-    GetDetailProductCommandRequest commandRequest = GetDetailProductCommandRequest.builder()
-        .sku(sku)
-        .build();
+    @GetMapping(ProductApiPath.PRODUCT_DETAIL)
+    public WebResponse<GetDetailProductWebModel> getProduct(@PathVariable String sku) {
+        GetDetailProductCommandRequest commandRequest = GetDetailProductCommandRequest.builder()
+                .sku(sku)
+                .build();
 
-    GetDetailProductCommandResponse commandResponse = commandExecutor.execute(GetDetailProductCommand.class,
-        commandRequest);
+        GetDetailProductCommandResponse commandResponse = commandExecutor.execute(GetDetailProductCommand.class,
+                commandRequest);
 
-    return WebResponse.<GetDetailProductWebModel>builder()
-        .success(true)
-        .data(ProductResponseHelper.toGetDetailProductWebResponse(commandResponse))
-        .build();
-  }
+        return WebResponse.<GetDetailProductWebModel>builder()
+                .success(true)
+                .data(ProductResponseHelper.toGetDetailProductWebResponse(commandResponse))
+                .build();
+    }
 
-  @GetMapping(ProductApiPath.PRODUCT)
-  public WebListResponseWithPage<GetListProductWebModel> getListProduct(
-      @RequestParam(required = false) String search,
-      @RequestParam(required = false) String category,
-      @RequestParam(required = false) Long minPrice,
-      @RequestParam(required = false) Long maxPrice,
-      @RequestParam(required = false) String brand,
-      @RequestParam(required = false) Integer page,
-      @RequestParam(required = false) Integer size) {
-    GetListProductCommandRequest commandRequest = GetListProductCommandRequest.builder()
-        .search(search)
-        .category(category)
-        .minPrice(minPrice)
-        .maxPrice(maxPrice)
-        .brand(brand)
-        .page(page)
-        .size(size)
-        .build();
+    @GetMapping(ProductApiPath.PRODUCT)
+    public WebListResponseWithPage<GetListProductWebModel> getListProduct(
+            @RequestParam(required = false) String search,
+            @RequestParam(required = false) String category,
+            @RequestParam(required = false) Long minPrice,
+            @RequestParam(required = false) Long maxPrice,
+            @RequestParam(required = false) String brand,
+            @RequestParam(required = false) Integer page,
+            @RequestParam(required = false) Integer size) {
+        GetListProductCommandRequest commandRequest = GetListProductCommandRequest.builder()
+                .search(search)
+                .category(category)
+                .minPrice(minPrice)
+                .maxPrice(maxPrice)
+                .brand(brand)
+                .page(page)
+                .size(size)
+                .build();
 
-    GetListProductCommandResponse commandResponse =
-        commandExecutor.execute(GetListProductCommand.class, commandRequest);
+        GetListProductCommandResponse commandResponse = commandExecutor.execute(GetListProductCommand.class,
+                commandRequest);
 
-    return WebListResponseWithPage.<GetListProductWebModel>builder()
-        .success(true)
-        .data(ProductResponseHelper.toGetListProductWebResponse(commandResponse))
-        .totalPages(commandResponse.getTotalPages())
-        .currentPage(commandResponse.getCurrentPage())
-        .totalElements(commandResponse.getTotalElements())
-        .pageSize(commandResponse.getPageSize())
-        .build();
-  }
+        return WebListResponseWithPage.<GetListProductWebModel>builder()
+                .success(true)
+                .data(ProductResponseHelper.toGetListProductWebResponse(commandResponse))
+                .totalPages(commandResponse.getTotalPages())
+                .currentPage(commandResponse.getCurrentPage())
+                .totalElements(commandResponse.getTotalElements())
+                .pageSize(commandResponse.getPageSize())
+                .build();
+    }
 }
