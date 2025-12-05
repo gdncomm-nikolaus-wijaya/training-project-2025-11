@@ -1,0 +1,292 @@
+{
+	"info": {
+		"_postman_id": "fe620122-f58c-4c21-98b8-acff1072233f",
+		"name": "Gateway API Training Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6934745"
+	},
+	"item": [
+		{
+			"name": "Product",
+			"item": [
+				{
+					"name": "Get Product list",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/product?search=iphone&category&minPrice=100000&maxPrice&brand&page=1&size=10",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"product"
+							],
+							"query": [
+								{
+									"key": "search",
+									"value": "iphone"
+								},
+								{
+									"key": "category",
+									"value": null
+								},
+								{
+									"key": "minPrice",
+									"value": "100000"
+								},
+								{
+									"key": "maxPrice",
+									"value": null
+								},
+								{
+									"key": "brand",
+									"value": null
+								},
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Detail Product",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/product/APP-0001",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"product",
+								"APP-0001"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Account",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"testing finallah\",\r\n  \"email\": \"final@gmail.com\",\r\n  \"password\": \"Testing1\",\r\n  \"phoneNumber\": \"6285202512041\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"email\": \"final@gmail.com\",\r\n  \"password\": \"Testing1\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2OTMwZmM2OGRiZjE4YmJlYjlkN2UxZmEiLCJlbWFpbCI6ImZpbmFsQGdtYWlsLmNvbSIsIm5hbWUiOiJ0ZXN0aW5nIGZpbmFsbGFoIiwic2Vzc2lvbklkIjoiNjkzMGZmMGRhYWUyZGZkOTAwNWYyYWE1IiwiaWF0IjoxNzY0ODE4NzAxLCJleHAiOjE3NjQ4MTkwMDF9.kqJc-EBkpgwW7zdfnNfktG92HD67RXZCseuWhWddKdk",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/auth/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "userDetail",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8383/api/v1/auth/user-detail?userId=69325fe6e8894bc14599e450",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"auth",
+								"user-detail"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "69325fe6e8894bc14599e450"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "cart",
+			"item": [
+				{
+					"name": "addToCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2OTMwZmM2OGRiZjE4YmJlYjlkN2UxZmEiLCJlbWFpbCI6ImZpbmFsQGdtYWlsLmNvbSIsIm5hbWUiOiJ0ZXN0aW5nIGZpbmFsbGFoIiwic2Vzc2lvbklkIjoiNjkzMTAyOWM5OGI1NTBlYzBmOWJiZWQ0IiwiaWF0IjoxNzY0ODE5NjEyLCJleHAiOjE3NjQ4MTk5MTJ9.t2-rSObgyfN8Cu7e9IMz4owKhz9WU_bQPnNBZcQHzE8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"productSku\": \"SAM-0005\",\r\n  \"quantity\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cart",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cart"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "clearCart",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2OTJmZjMzNDdlMDY0NTllMmQ5YWViYjMiLCJlbWFpbCI6ImFyeTIzQGdtYWlsLmNvbSIsIm5hbWUiOiJ0ZXN0aW5nIGFyeTIiLCJzZXNzaW9uSWQiOiI2OTMwMDcxMzNjNWRkMmQ2Yjg1YjEyYWMiLCJpYXQiOjE3NjQ3NTUyMTksImV4cCI6MTc2NDc1NTUxOX0.6Byeatb9Wdg4YU6-E84kVhQ7S5cdy3lyH5BY-zfL6pQ\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"cartId\": \"6930078842d668375c77b73c\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8383/api/v1/cart/clearAll",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8383",
+							"path": [
+								"api",
+								"v1",
+								"cart",
+								"clearAll"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
